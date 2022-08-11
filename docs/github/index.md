@@ -1,5 +1,5 @@
 ---
-title: Github地址
+title: Github | 软件
 ---
 
 :::danger
@@ -8,8 +8,6 @@ title: Github地址
 
 **OK？**
 :::
-
-### 软件
 
 **落雪音乐助手电脑版：**
 
@@ -22,9 +20,3 @@ issue:<https://github.com/lyswhut/lx-music-desktop/issues>
 仓库:<https://github.com/lyswhut/lx-music-mobile>
 
 issue:仓库:<https://github.com/lyswhut/lx-music-mobile/issues>
-
-### 文档
-
-原文档地址：<https://github.com/lyswhut/lx-music-doc>
-
-现文档地址：<https://github.com/Folltoshe/lx-music-docs>

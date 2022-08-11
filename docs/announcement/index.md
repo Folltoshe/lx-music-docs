@@ -1,16 +1,6 @@
 ---
-title: 公告
+title: 公告 | 全局
 ---
-
-:::tip
-LX Music 文档已全新升级
-
-由@Folltoshe 制作
-
-[Github 主页](https://github.com/Folltoshe)
-:::
-
-## 公告
 
 :::danger
 **软件没有 ios 版，别天天搁群里问有没有**
@@ -39,17 +29,3 @@ LX Music 文档已全新升级
 
 **到群里问问题时候语气好点，别搞得我们欠你钱似的**
 :::
-
-## 文档升级公告
-
-:::tip
-
-[GithubPage 版](https://github.lxmusic.docs.folltoshe.com)
-
----
-
-[国内](https://lxmusic.huiyi.art)
-
-:::
-
-- 当前文档搜索服务暂不可用

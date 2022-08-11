@@ -1,5 +1,5 @@
 ---
-title: 常见问题︱Scheme URL支持
+title: 常见问题 | Scheme URL支持
 ---
 
 从 v1.17.0 起支持 Scheme URL，可以使用此功能从浏览器等场景下调用 LX Music，我们开发了一个[油猴脚本](https://github.com/lyswhut/lx-music-script#readme)配套使用
