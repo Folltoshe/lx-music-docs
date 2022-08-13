@@ -73,16 +73,16 @@ export default sidebar({
             "interface-abnormal.md",
           ],
         },
-        { text: "常见问题 | 可用的快捷键", icon: "hotkey", link: "/hotkey" },
+        { text: "常见问题 | 可用的快捷键", icon: "hotkey", link: "/document/desktop/hotkey/" },
         {
           text: "常见问题 | 支持的启动参数",
           icon: "start",
-          link: "/run-params",
+          link: "/document/desktop/run-params/",
         },
         {
           text: "常见问题 | Scheme URL支持",
           icon: "url",
-          link: "/scheme-url",
+          link: "/document/desktop/scheme-url/",
         },
       ],
     },
@@ -110,7 +110,7 @@ export default sidebar({
           icon: "play",
           text: "常见问题 | 播放与下载",
           collapsable: true,
-          children: ["cannot-play-download.md", "download.md", "revise-dns.md"],
+          children: ["cannot-play.md", "download.md", "revise-dns.md"],
         },
         {
           prefix: "sync-backup/",
@@ -136,7 +136,7 @@ export default sidebar({
         {
           text: "常见问题 | 状态栏歌词",
           icon: "question",
-          link: "/statusbar-lyric",
+          link: "/document/mobile/statusbar-lyric/",
         },
       ],
     },
