@@ -110,7 +110,7 @@ export default sidebar({
           icon: "play",
           text: "常见问题 | 播放与下载",
           collapsable: true,
-          children: ["cannot-play.md", "download.md", "revise-dns.md"],
+          children: ["cannot-play.md", "download.md", "revise-dns.md", "background-play.md"],
         },
         {
           prefix: "sync-backup/",
