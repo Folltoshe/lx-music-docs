@@ -1,6 +1,7 @@
 import { hopeTheme } from "vuepress-theme-hope";
 import sidebar from "./sidebar";
 import navbar from "./navbar";
+import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 
 export default hopeTheme({
   navbarLayout: {
