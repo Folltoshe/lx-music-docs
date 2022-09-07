@@ -4,15 +4,13 @@ title: 公告 | 软件
 
 :::tip
 
-**LX Music 主题修改版重磅来袭(By Folltoshe 部分主题 By lerdertre)**
+**LX Music 主题修改版(By Folltoshe 部分主题 By lerdertre)**
 
 **下载地址:**
 
-[网盘链接](https://folltoshe.lanzoub.com/b03j7lxuj)
-密码:`glqn`
+[网盘链接](https://folltoshe.lanzoub.com/b03j7lxuj) 密码:`glqn`
 
-**软件截图:**
-![软件截图](./image.png)<br>
+**软件截图:** ![软件截图](./image.png)<br>
 
 :::
 
@@ -22,6 +20,10 @@ title: 公告 | 软件
 
 ---
 
-**2022/8/11 由于 QQ 音乐搜索接口更改，所以 QQ 源搜索服务暂不可用(测试版已修复)**
+**2022/8/11 由于 QQ 音乐搜索接口更改，所以 QQ 源搜索服务暂不可用(已修复)**
+
+---
+
+**2022/9 由于音源域名问题所以无法播放音乐(已修复)**
 
 :::
