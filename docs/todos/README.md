@@ -10,18 +10,6 @@ title: 催更(bushi
 
 # 附录
 
-[落雪無痕](https://github.com/lyswhut/)在 2022 年 7 月 27 日回复(如下图)
-
-![rep1](./img//rep1-1.png)<br> ![rep2](./img//rep1-2.png)<br>
-![rep3](./img//rep1-3.png)<br>
-
-[落雪無痕](https://github.com/lyswhut/)在 2022 年 8 月 7 日回复(如下图)
-
-![rep1](./img//rep2-1.png)<br> ![rep2](./img//rep2-2.png)<br>
-![rep3](./img//rep2-3.png)<br> ![rep4](./img//rep2-4.png)<br>
-
-落雪無痕加油哇！
-
 # **已有功能**
 
 **查看播放列表**
