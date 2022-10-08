@@ -7,13 +7,12 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-
-node_modules
-docs/.vuepress/.cache/
-docs/.vuepress/.temp/
-docs/.vuepress/dist/
-
 node_modules/
-docs/.vuepress/.cache/
-docs/.vuepress/.temp/
-docs/.vuepress/dist/
+src/.vuepress/.cache/
+src/.vuepress/.temp/
+src/.vuepress/dist/
+
+# node_modules/
+# src\src/.vuepress/.cache/
+# src\src/.vuepress/.temp/
+# src\src/.vuepress/dist/

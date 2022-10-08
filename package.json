@@ -1,20 +1,21 @@
 {
   "name": "lx-music-docs",
-  "version": "3.5.5",
-  "description": "落雪音乐助手文档",
-  "license": "MIT",
+  "version": "2.0.0",
+  "description": "lx-music-docs",
+  "license": "apache-2.0",
+  "type": "module",
   "scripts": {
-    "docs:build": "vuepress build docs",
-    "docs:clean-dev": "vuepress dev docs --clean-cache",
-    "docs:dev": "vuepress dev docs",
-    "serve": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "docs:build": "vuepress build src",
+    "docs:clean-dev": "vuepress dev src --clean-cache",
+    "docs:dev": "vuepress dev src",
+    "build": "vuepress build src",
+    "serve": "vuepress dev src"
   },
   "devDependencies": {
     "@vuepress/client": "2.0.0-beta.51",
     "@vuepress/plugin-docsearch": "^2.0.0-beta.51",
-    "vue": "^3.2.27",
+    "vue": "^3.2.29",
     "vuepress": "2.0.0-beta.51",
-    "vuepress-theme-hope": "2.0.0-beta.97"
+    "vuepress-theme-hope": "2.0.0-beta.108"
   }
 }
