@@ -2,6 +2,7 @@
 title: 无法更新
 category:
   - 常见问题
+  - 桌面端
 tag:
   - 更新
 ---

@@ -2,14 +2,19 @@
 title: 修改DNS和HOST
 category:
   - 常见问题
+  - 桌面端
 tag:
   - 播放
   - 下载
 ---
 
-**改完 DNS 或 HOST 后可能需要重启软件或电脑才会生效**
+:::info
 
-**Windows:**
+改完 DNS 或 HOST 后可能需要重启软件或电脑才会生效
+
+:::
+
+## Windows
 
 DNS 修改方法(7~8 为可选操作):
 
@@ -39,16 +44,16 @@ HOST 修改方法:
 
    ` 97.64.37.235 ts.tempmusics.tk`
 
-   `97.64.37.235 tm.tempmusic.tk`
+   `97.64.37.235 tm.tempmusics.tk`
 
 4. 保存
 
-**MacOS:**
+## MacOS
 
 DNS 修改方法:
 
-1. 俺母鸡啊，自行百度
+1. 不知道
 
 HOST 修改方法:
 
-1. 我不到啊，自行百度
+1. 不知道

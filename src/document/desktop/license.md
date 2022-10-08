@@ -3,6 +3,7 @@ title: 软件 | 许可协议
 icon: 'license'
 category:
   - 软件
+  - 桌面端
 tag:
   - 许可协议
 ---

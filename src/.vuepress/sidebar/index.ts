@@ -25,6 +25,13 @@ export const zhSidebar = sidebar({
       collapsable: true,
     },
     {
+      text: '常见问题 | 界面显示异常',
+      icon: 'screen',
+      prefix: 'screen-abnormal/',
+      children: 'structure',
+      collapsable: true,
+    },
+    {
       text: '常见问题 | v1',
       icon: 'question',
       prefix: 'v1/',
@@ -76,5 +83,13 @@ export const zhSidebar = sidebar({
     'license.md',
     'use-source.md',
   ],
-  '/document/mobile/': 'structure',
+  '/document/mobile/': [
+    {
+      text: '常见问题 | 安装',
+      icon: 'package',
+      prefix: 'install/',
+      children: 'structure',
+      collapsable: true,
+    },
+  ],
 })

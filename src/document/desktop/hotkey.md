@@ -3,6 +3,7 @@ title: 常见问题 | 可用的快捷键
 icon: 'hotkey'
 category:
   - 常见问题
+  - 桌面端
 tag:
   - 快捷键
 ---

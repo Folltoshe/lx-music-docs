@@ -2,6 +2,7 @@
 title: 备份功能
 category:
   - 常见问题
+  - 桌面端
 tag:
   - 备份
 ---

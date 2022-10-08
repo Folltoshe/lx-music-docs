@@ -2,6 +2,7 @@
 title: 安装包说明
 category:
   - 常见问题
+  - 桌面端
 tag:
   - 安装
 ---

@@ -3,6 +3,7 @@ title: 软件 | 源码使用方法
 icon: 'code'
 category:
   - 软件
+  - 桌面端
 tag:
   - 源码
 ---

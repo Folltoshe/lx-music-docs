@@ -3,6 +3,7 @@ title: 软件 | 支持的启动参数
 icon: 'start'
 category:
   - 软件
+  - 桌面端
 tag:
   - 启动参数
 ---
