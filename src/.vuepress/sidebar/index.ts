@@ -85,11 +85,30 @@ export const zhSidebar = sidebar({
   ],
   '/document/mobile/': [
     {
-      text: '常见问题 | 安装',
-      icon: 'package',
-      prefix: 'install/',
+      text: '常见问题 | 列表和歌单',
+      icon: 'songlist',
+      prefix: 'list-songlist/',
       children: 'structure',
       collapsable: true,
     },
+    {
+      text: '常见问题 | 播放和下载',
+      icon: 'play',
+      prefix: 'play-download/',
+      children: 'structure',
+      collapsable: true,
+    },
+    {
+      text: '常见问题 | 其他问题',
+      icon: 'other',
+      prefix: 'other/',
+      children: 'structure',
+      collapsable: true,
+    },
+    'data-path.md',
+    'update.md',
+    'statusbar-lyric.md',
+    'license.md',
+    'use-source.md',
   ],
 })

@@ -1,5 +1,10 @@
 ---
 title: 软件下载
+icon: 'download'
+category:
+  - 下载
+tag:
+  - 软件下载
 ---
 
 :::danger

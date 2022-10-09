@@ -4,8 +4,8 @@ category:
   - 常见问题
   - 桌面端
 tag:
-  - 播放
-  - 下载
+  - DNS
+  - HOST
 ---
 
 :::info
