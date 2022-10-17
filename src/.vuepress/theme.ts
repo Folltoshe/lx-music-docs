@@ -29,8 +29,7 @@ export default hopeTheme({
   pageInfo: ['Author', 'Original', 'Date', 'Category', 'Tag', 'ReadingTime'],
   navbar: zhNavbar,
   sidebar: zhSidebar,
-  footer:
-    "<p><a href='https://beian.miit.gov.cn/' target='_blank' >闽ICP备2022010952号</a></p><p>文档By Folltoshe  |  部分文档 By lerdertre  |  软件 By lyswhut</p>",
+  footer: "<p><a href='https://beian.miit.gov.cn/' target='_blank' >闽ICP备2022010952号</a></p>",
   displayFooter: true,
   metaLocales: {
     editLink: '在 GitHub 上编辑此页',
