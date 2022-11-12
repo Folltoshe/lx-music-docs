@@ -6,11 +6,14 @@ heroImage: /logo.svg
 heroText: LX Music
 tagline: 一个免费&开源的音乐查找工具
 actions:
-  - text: 文档 📖
+  - text: 常见问题 ❓
     link: /document/
     type: primary
   - text: 下载 🚀
     link: /download/
+    type: primary
+  - text: 反馈 🚀
+    link: /report/
     type: primary
 
 features:

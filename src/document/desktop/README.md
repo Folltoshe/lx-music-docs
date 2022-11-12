@@ -9,8 +9,11 @@ category:
 
 - 这里汇总了**桌面端**使用时的常见问题。
 
-- 在阅读本常见问题后，仍然无法解决你的问题，请提交`issue`或者加企鹅群`830125506`反馈（无事勿加，入群先看群公告，如果还是
-  无法解决再在群中提问），反馈时请先阅读反馈注意事项!
+- 如需反馈请查看[反馈注意事项](../../report/)
+
+- 如需下载软件请查看[下载页面](../../download/)
+
+- [软件更新日志](https://github.com/lyswhut/lx-music-desktop/blob/master/CHANGELOG.md)
 
 :::
 
@@ -28,7 +31,3 @@ category:
 - Windows 7 及以上
 - Mac OS
 - Linux
-
-[更新日志](https://github.com/lyswhut/lx-music-desktop/blob/master/CHANGELOG.md)
-
-[下载页面](../../download/index.md)

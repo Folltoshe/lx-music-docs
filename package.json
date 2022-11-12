@@ -9,7 +9,7 @@
     "docs:clean-dev": "vuepress dev src --clean-cache",
     "docs:dev": "vuepress dev src",
     "build": "vuepress build src",
-    "serve": "vuepress dev src"
+    "dev": "vuepress dev src"
   },
   "devDependencies": {
     "@vuepress/client": "2.0.0-beta.51",
