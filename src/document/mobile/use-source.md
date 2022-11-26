@@ -1,5 +1,5 @@
 ---
-title: 软件 | 源码使用方法
+title: 源码使用方法
 icon: 'code'
 category:
   - 软件

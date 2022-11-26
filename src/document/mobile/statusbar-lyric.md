@@ -1,5 +1,5 @@
 ---
-title: 常见问题 | 状态栏歌词
+title: 状态栏歌词
 icon: 'lyric'
 category:
   - 常见问题

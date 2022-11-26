@@ -1,5 +1,5 @@
 ---
-title: 常见问题 | 更新和安装
+title: 更新和安装
 icon: 'package'
 category:
   - 常见问题

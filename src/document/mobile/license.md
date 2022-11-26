@@ -1,5 +1,5 @@
 ---
-title: 软件 | 许可协议
+title: 许可协议
 icon: 'license'
 category:
   - 软件

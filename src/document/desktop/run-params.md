@@ -1,5 +1,5 @@
 ---
-title: 软件 | 支持的启动参数
+title: 支持的启动参数
 icon: 'start'
 category:
   - 软件

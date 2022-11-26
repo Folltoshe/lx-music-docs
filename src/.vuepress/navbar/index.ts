@@ -11,7 +11,6 @@ export const zhNavbar = navbar([
       { text: '移动端', icon: 'mobile', link: 'mobile/' },
     ],
   },
-  { text: '下载', icon: 'download', link: '/download/' },
-  { text: '反馈', icon: 'report', link: '/report/' },
-  { text: '催更(bushi', icon: 'reminders', link: '/todos/' },
+  { text: '软件下载', icon: 'download', link: '/download/' },
+  { text: '问题反馈', icon: 'report', link: '/report/' },
 ])

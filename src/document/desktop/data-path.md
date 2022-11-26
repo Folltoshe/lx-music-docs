@@ -1,5 +1,5 @@
 ---
-title: 常见问题 | 数据存储路径
+title: 数据存储路径
 icon: 'storage'
 category:
   - 常见问题

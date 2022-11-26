@@ -1,5 +1,5 @@
 ---
-title: 常见问题 | Scheme URL支持
+title: Scheme URL支持
 icon: 'url'
 category:
   - 常见问题

@@ -1,5 +1,5 @@
 ---
-title: 常见问题 | 可用的快捷键
+title: 可用的快捷键
 icon: 'hotkey'
 category:
   - 常见问题
