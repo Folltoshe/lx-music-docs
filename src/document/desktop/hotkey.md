@@ -1,6 +1,7 @@
 ---
 title: 可用的快捷键
 icon: 'hotkey'
+author: 落雪無痕
 category:
   - 常见问题
   - 桌面端

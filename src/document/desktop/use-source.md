@@ -1,6 +1,7 @@
 ---
 title: 源码使用方法
 icon: 'code'
+author: 落雪無痕
 category:
   - 软件
   - 桌面端

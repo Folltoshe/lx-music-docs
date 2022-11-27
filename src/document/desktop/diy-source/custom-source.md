@@ -1,5 +1,6 @@
 ---
 title: 编写自定义源
+author: 落雪無痕
 category:
   - 软件
   - 桌面端
@@ -28,6 +29,7 @@ const qualitys = {
     flac: 'flac',
   },
 }
+
 const httpRequest = (url, options) =>
   new Promise((resolve, reject) => {
     request(url, options, (err, resp) => {
@@ -53,6 +55,7 @@ const apis = {
 //    当action为musicUrl时info的结构：{type, musicInfo}，
 //        info.type：音乐质量，可能的值有128k / 320k / flac（取决于初始化时对应源传入的qualitys值中的一个），
 //        info.musicInfo：音乐信息对象，里面有音乐ID、名字等信息
+
 on(EVENT_NAMES.request, ({ source, action, info }) => {
   // 回调必须返回 Promise 对象
   switch (action) {
@@ -66,6 +69,7 @@ on(EVENT_NAMES.request, ({ source, action, info }) => {
 })
 
 // 脚本初始化完成后需要发送inited事件告知应用
+
 send(EVENT_NAMES.inited, {
   status: true, // 初始化成功 or 失败
   openDevTools: false, // 是否打开开发者工具，方便用于调试脚本
@@ -97,9 +101,13 @@ send(EVENT_NAMES.inited, {
 ```
 
 - `@name `：源的名字，建议不要过长，24 个字符以内
+
 - `@description `：源的描述，建议不要过长，36 个字符以内，可不填，不填时必须保留 @description
+
 - `@version`：源的版本号，可不填，不填时可以删除 @version
+
 - `@author `：脚本作者名字，可不填，不填时可以删除 @author
+
 - `@homepage `：脚本主页，可不填，不填时可以删除 @homepage
 
 ## `window.lx`
@@ -129,6 +137,7 @@ send(EVENT_NAMES.inited, {
  * @param event_name 事件名
  * @param handler 事件处理回调 -- 注意：注册的回调必须返回 Promise 对象
  */
+
 window.lx.on(event_name, handler)
 ```
 
@@ -143,6 +152,7 @@ window.lx.on(event_name, handler)
  * @param event_name 事件名
  * @param datas 要传给应用的数据
  */
+
 window.lx.send(event_name, datas)
 ```
 
@@ -157,6 +167,7 @@ HTTP 请求方法，用于发送 HTTP 请求，此 HTTP 请求方法不受跨域
  * @param callback 请求结果的回调 入参：err, resp, body
  * @return 返回一个方法，调用此方法可以终止HTTP请求
  */
+
 const cancelHttp = window.lx.request(url, options, callback)
 ```
 
@@ -165,11 +176,17 @@ const cancelHttp = window.lx.request(url, options, callback)
 应用提供给脚本的工具方法：
 
 - `window.lx.utils.buffer.from`：对应 Node.js 的 `Buffer.from`
+
 - `window.lx.utils.buffer.bufToString`：Buffer 转字符串 `bufToString(buffer, format)`，`format`对应 Node.js
-  `Buffer.toString`的参数（v1.14.0 之后新增）
+
+  - `Buffer.toString`的参数（v1.14.0 之后新增）
+
 - `window.lx.utils.crypto.aesEncrypt`：AES 加密 `aesEncrypt(buffer, mode, key, iv)`
+
 - `window.lx.utils.crypto.md5`：MD5 加密 `md5(str)`
+
 - `window.lx.utils.crypto.randomBytes`：生成随机字符串 `randomBytes(size)`
+
 - `window.lx.utils.crypto.rsaEncrypt`：RSA 加密 `rsaEncrypt(buffer, key)`
 
 目前仅提供以上工具方法，如果需要其他方法可以开 issue 讨论。

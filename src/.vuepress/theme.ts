@@ -4,6 +4,7 @@ import { zhSidebar } from './sidebar/index.js'
 
 export default hopeTheme({
   fullscreen: true,
+  toc: true,
   navbarLayout: {
     left: ['Brand'],
     center: ['Links'],
@@ -34,13 +35,6 @@ export default hopeTheme({
   metaLocales: {
     editLink: '在 GitHub 上编辑此页',
   },
-
-  // encrypt: {
-  //   config: {
-  //     '/demo/encrypt.html': ['1234'],
-  //     '/zh/demo/encrypt.html': ['1234'],
-  //   },
-  // },
 
   plugins: {
     photoSwipe: undefined,

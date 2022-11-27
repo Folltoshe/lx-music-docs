@@ -1,6 +1,7 @@
 ---
 title: 状态栏歌词
 icon: 'lyric'
+author: 落雪無痕
 category:
   - 常见问题
   - 移动端

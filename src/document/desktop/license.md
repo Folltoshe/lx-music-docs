@@ -1,6 +1,7 @@
 ---
 title: 许可协议
 icon: 'license'
+author: 落雪無痕
 category:
   - 软件
   - 桌面端
