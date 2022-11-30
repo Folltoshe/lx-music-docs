@@ -26,4 +26,14 @@ tag:
 现在此特性被放到`statusbar-lyric`分支上，并设置了构建任务，想要此功能的人可以去这里下载构建包
 ：<https://github.com/lyswhut/lx-music-mobile/actions/workflows/statusbar-lyric.yml>
 
-:::tip 这需要登录 GitHub 才能下载，如果你不知道怎么下载，可以去企鹅测试群(`768786588`)文件下载（文件名带`sl`后缀） :::
+:::info
+
+如果在使用墨•状态栏歌词时候出现错误，请尝试重启软件和系统 UI！并检查是否在墨•状态栏歌词中勾选 LX Music！
+
+::::
+
+:::tip
+
+这需要登录 GitHub 才能下载，如果你不知道怎么下载，可以去企鹅测试群(`768786588`)文件下载（文件名带`sl`后缀）
+
+:::
