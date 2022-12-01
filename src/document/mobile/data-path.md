@@ -9,6 +9,8 @@ tag:
   - 数据存储
 ---
 
-软件的数据存储在：`/data/user/0/cn.toside.music.mobile/cache`
+软件的数据存储在：`/data/user/{uid}/cn.toside.music.mobile/cache`
+
+uid为当前用户的id，通常为0，如果有更多用户，那么这个数字会更大
 
 此目录为应用私有目录，需要 root 权限才能访问
