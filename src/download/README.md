@@ -11,7 +11,9 @@ tag:
 
 请先看完以下这几点!!!!!!!
 
-若网盘链接无法打开:[百度](https://www.baidu.com/s?wd=蓝奏云链接打不开) or [必应](https://cn.bing.com/search?q=蓝奏云链接打不开)
+若网盘链接无法打开:
+请尝试将lanzoui改为lanzoux/lanzouj/lanzoue任意一个查看能否打开 或 \[
+[百度](https://www.baidu.com/s?wd=蓝奏云链接打不开) or [必应](https://cn.bing.com/search?q=蓝奏云链接打不开) \]
 
 若你不知道该下载哪一个版本请参考[安装包解析](#软件安装包说明)
 

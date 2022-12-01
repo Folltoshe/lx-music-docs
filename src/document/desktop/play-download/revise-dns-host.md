@@ -50,10 +50,17 @@ HOST 修改方法:
 
 ## MacOS
 
+没有MacOS电脑，欢迎PR
+
 DNS 修改方法:
 
 1. 不知道
 
 HOST 修改方法:
 
-1. 不知道
+1. 打开系统偏好设置，选择Hosts
+
+2. IP输入`97.64.37.235`，域名输入`ts.tempmusics.tk`  
+  IP输入`97.64.27.235`，域名输入`tm.tempmusics.tk`
+
+3. 保存

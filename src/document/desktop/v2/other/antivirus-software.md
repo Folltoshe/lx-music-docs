@@ -17,6 +17,8 @@ CI 拉取源代码构建，构建日志：[GitHub Actions](https://github.com/ly
 当然，以上说明建立的前提是在你所用的安装包是从**本项目主页上写的链接**下载的，或者有相关能力者还可以下载源代码自己构建安
 装包。
 
+我们并不保证第三方下载站提供的安装包不包含恶意行为
+
 从`v0.17.0`起，由于加入了音频输出设备切换功能，该功能调用了
 [MediaDevices.enumerateDevices()](https://developer.mozilla.org/zh-CN/docs/Web/API/MediaDevices/enumerateDevices)，可能
 导致安全软件提示洛雪要访问摄像头（目前发现卡巴斯基会提示），但实际上没有用到摄像头，并且摄像头的提示灯也不会亮，你可以选
