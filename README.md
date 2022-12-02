@@ -51,7 +51,7 @@ LX Music一路走来没有任何无关的功能，只是纯粹地做了一件事
 ### 运行
 
 ```
-npm run serve
+npm run dev
 ```
 
 ### 编译
