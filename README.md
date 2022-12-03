@@ -6,7 +6,7 @@
 
 ---
 
-### [以后文档的另一个维护人](https://github.com/helliplhm-qwq/)想说的一些话
+### [以后文档的另一个维护人](https://github.com/helloplhm-qwq/)想说的一些话
 
 我和Folltoshe都是初中生，因为学业原因，以后文档更新也不会再那么频繁了。  
 以后LX Music不会再支持无损了，请用其他软件或者使用支持无损的自定义音源。  
