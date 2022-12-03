@@ -74,3 +74,7 @@ tag:
 :::
 
 另外还有 `armeabi-v7a`、`x86_64`等版本，但没有上传到网盘，若需要可自行到项目发布页面下载。
+
+## 测试版下载
+
+测试版可以在[GitHub Actions-PC版](https://github.com/lyswhut/lx-music-desktop/actions)|[GitHub Actions-移动版](https://github.com/lyswhut/lx-music-mobile/actions)或`测试群`中下载
