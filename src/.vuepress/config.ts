@@ -50,9 +50,23 @@ export default defineUserConfig({
       },
     }),
   ],
-  lang: 'zh-CN',
-  title: 'LX Music',
-  description: '落雪音乐助手文档',
+  locales: {
+    '/': {
+      lang: 'zh-CN',
+      title: 'LX Music',
+      description: '落雪音乐助手文档',
+    },
+    '/desktop/': {
+      lang: 'zh-CN',
+      title: 'LX Music For Desktop',
+      description: '落雪音乐助手桌面端文档',
+    },
+    '/mobile/': {
+      lang: 'zh-CN',
+      title: 'LX Music For Mobile',
+      description: '落雪音乐助手移动端文档',
+    },
+  },
   base: '/',
   theme,
   shouldPrefetch: false,
