@@ -2,7 +2,7 @@
 home: true
 icon: desktop
 sidebar: true
-title: 桌面端常见问题
+title: 桌面端
 category:
   - 常见问题
   - 桌面端
@@ -10,14 +10,13 @@ heroImage: /logo.svg
 heroText: LX Music For Desktop
 tagline: 一个基于 Electron + Vue 开发的音乐软件。
 actions:
-  - text: '1.x.x常见问题'
-    link: document/v1/
+  - text: '  常见问题'
+    link: document/
     type: primary
-    # icon: desktop
-  - text: '2.x.x常见问题'
-    link: document/v2/
-    type: primary
-    # icon: desktop
+    icon: question
+  - text: '  主页'
+    link: /
+    icon: home
 features:
   - title: 技术栈
     icon: open
@@ -49,18 +48,3 @@ features:
 - [软件更新日志](https://github.com/lyswhut/lx-music-desktop/blob/master/CHANGELOG.md)
 
 :::
-
-<!-- ## 说明
-
-一个基于 Electron + Vue 开发的音乐软件。
-
-所用技术栈：
-
-- Electron 13
-- Vue 3
-
-已支持的平台：
-
-- Windows 7 及以上
-- Mac OS
-- Linux -->

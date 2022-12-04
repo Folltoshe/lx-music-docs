@@ -6,19 +6,19 @@ export const desktopNavbar = navbar([
     text: '常见问题',
     icon: 'docs',
     children: [
-      { text: '桌面端', icon: 'desktop', link: '/desktop/' },
-      { text: '移动端', icon: 'mobile', link: '/mobile/' },
+      { text: '桌面端', icon: 'desktop', link: '/desktop/', activeMatch: '^/desktop/' },
+      { text: '移动端', icon: 'mobile', link: '/mobile/', activeMatch: '^/mobile/' },
     ],
   },
   { text: '软件下载', icon: 'download', link: '/download/' },
-  { text: '反馈', icon: 'report', link: '/report/' },
+  { text: '问题反馈', icon: 'report', link: '/report/' },
   {
-    text: '版本',
+    text: '切换版本',
     // activeMatch: '^/document/desktop/$',
     prefix: '/desktop/document/',
     children: [
-      { text: 'V1', link: '/v1/' },
-      { text: 'V2', link: '/v2/' },
+      { text: '1.x.x', link: 'v1/' },
+      { text: '2.x.x', link: 'v2/' },
     ],
   },
 ])

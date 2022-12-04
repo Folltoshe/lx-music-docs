@@ -1,7 +1,23 @@
 import { sidebar } from 'vuepress-theme-hope'
 
 export const desktopSidebar = sidebar({
-  '/desktop/': ['license.md'],
+  '/desktop/document/': [
+    '/desktop/document/v1/',
+    '/desktop/document/v2/',
+    {
+      text: '自定义源',
+      icon: 'diy',
+      prefix: 'diy-source/',
+      children: 'structure',
+      collapsable: true,
+    },
+    'data-path',
+    'hotkey.md',
+    'scheme-url.md',
+    'run-params.md',
+    'license.md',
+    'use-source.md',
+  ],
   '/desktop/document/v1/': [
     {
       text: '列表和歌单',
@@ -52,19 +68,6 @@ export const desktopSidebar = sidebar({
       children: 'structure',
       collapsable: true,
     },
-    {
-      text: '自定义源',
-      icon: 'diy',
-      prefix: 'diy-source/',
-      children: 'structure',
-      collapsable: true,
-    },
-    'data-path.md',
-    'hotkey.md',
-    'scheme-url.md',
-    'run-params.md',
-    'license.md',
-    'use-source.md',
   ],
   '/desktop/document/v2/': [
     {

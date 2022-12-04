@@ -6,10 +6,10 @@ export const mobileNavbar = navbar([
     text: '常见问题',
     icon: 'docs',
     children: [
-      { text: '桌面端', icon: 'desktop', link: '/desktop/' },
-      { text: '移动端', icon: 'mobile', link: '/mobile/' },
+      { text: '桌面端', icon: 'desktop', link: '/desktop/', activeMatch: '^/desktop/' },
+      { text: '移动端', icon: 'mobile', link: '/mobile/', activeMatch: '^/mobile/' },
     ],
   },
   { text: '软件下载', icon: 'download', link: '/download/' },
-  { text: '反馈', icon: 'report', link: '/report/' },
+  { text: '问题反馈', icon: 'report', link: '/report/' },
 ])
