@@ -15,9 +15,21 @@ category:
 
 - [软件更新日志](https://github.com/lyswhut/lx-music-mobile/blob/master/CHANGELOG.md)
 
+---
+
+## 如何使用
+
+- 文档右上角的三条横线用来切换大分区
+
+- 如果有多个内容在文档右上角也会有三条横线,可以点击切换
+
+- 如果还是不懂就亲自点击一下!
+
+- 你可以使用文档**右上角**的搜索框来搜索你的问题!
+
 :::
 
-:::info
+:::danger
 
 **不计划支持 IOS**
 

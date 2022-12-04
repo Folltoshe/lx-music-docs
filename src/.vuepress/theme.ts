@@ -1,14 +1,16 @@
 import { hopeTheme } from 'vuepress-theme-hope'
-import { zhNavbar } from './navbar/index.js'
-import { zhSidebar } from './sidebar/index.js'
+import { defaultNavbar, desktopNavbar, mobileNavbar } from './navbar/index'
+import { defaultSidebar, desktopSidebar, mobileSidebar } from './sidebar/index'
 
 export default hopeTheme({
   fullscreen: true,
   toc: true,
+
   navbarLayout: {
     left: ['Brand'],
     center: ['Links'],
-    right: ['Language', 'Repo', 'Outlook', 'Search'],
+    // right: ['Language', 'Repo', 'Outlook', 'Search'],
+    right: ['Repo', 'Outlook', 'Search'],
   },
   themeColor: {
     blue: '#2196f3',
@@ -16,53 +18,47 @@ export default hopeTheme({
     green: '#3eaf7c',
     orange: '#fb9b5f',
   },
+
   hostname: 'https://lxmusic.docs.folltoshe.com',
   author: {
     name: 'Folltoshe',
     url: 'https://github.com/Folltoshe',
   },
-  docsBranch: 'main',
+
   iconAssets: '//at.alicdn.com/t/c/font_3583800_l6hvlb76j0q.css',
   logo: '/logo.svg',
+
   repo: 'https://github.com/folltoshe/lx-music-docs',
+
+  docsBranch: 'main',
   docsRepo: 'https://github.com/folltoshe/lx-music-docs',
   docsDir: 'src',
+
   pageInfo: ['Author', 'Original', 'Date', 'Category', 'Tag', 'ReadingTime'],
-  navbar: zhNavbar,
-  sidebar: zhSidebar,
   footer: "<p><a href='https://beian.miit.gov.cn/' target='_blank' >闽ICP备2022010952号</a></p>",
   displayFooter: true,
+
   metaLocales: {
     editLink: '在 GitHub 上编辑此页',
   },
 
+  locales: {
+    '/': {
+      navbar: defaultNavbar,
+      sidebar: defaultSidebar,
+    },
+    '/desktop/': {
+      navbar: desktopNavbar,
+      sidebar: desktopSidebar,
+    },
+    '/mobile/': {
+      navbar: mobileNavbar,
+      sidebar: mobileSidebar,
+    },
+  },
+
   plugins: {
     photoSwipe: undefined,
-    // If you don't need comment feature, you can remove following option
-    // The following config is for demo ONLY, if you need comment feature, please generate and use your own config, see comment plugin documentation for details.
-    // To avoid disturbing the theme developer and consuming his resources, please DO NOT use the following config directly in your production environment!!!!!
-    comment: {
-      /**
-       * Using Giscus
-       */
-      // provider: "Giscus",
-      // repo: "vuepress-theme-hope/giscus-discussions",
-      // repoId: "R_kgDOG_Pt2A",
-      // category: "Announcements",
-      // categoryId: "DIC_kwDOG_Pt2M4COD69",
-      /**
-       * Using Twikoo
-       */
-      // provider: "Twikoo",
-      // envId: "https://twikoo.ccknbc.vercel.app",
-      /**
-       * Using Waline
-       */
-      // provider: 'Waline',
-      // serverURL: 'https://vuepress-theme-hope-comment.vercel.app',
-    },
-
-    // Disable features you don't want here
     mdEnhance: {
       align: true,
       attrs: true,

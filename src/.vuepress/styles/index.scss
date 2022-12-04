@@ -41,6 +41,20 @@ strong {
   border-radius: 45px;
 }
 
+.home.project .hero h1,
+.home.project .hero .description,
+.home.project .hero .action {
+  // margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.hero-info {
+  text-align: center;
+}
+
 // 字体
 // @import url(https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.6.0/style.css);
 // @import url(https://unpkg.com/lxgw-wenkai-lite-webfont@1.6.0/style.css);
