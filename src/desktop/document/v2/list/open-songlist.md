@@ -96,3 +96,7 @@ xxxxxx 替换成你的 token）：
 ### 网易音乐
 
 ![WY-V2](https://tvax2.sinaimg.cn/large/007SWtfrly1h8gl7gn311j30rs1h81kx.jpg)
+
+### 酷我音乐
+
+![KW-V2](https://pic.imgdb.cn/item/638ec77fb1fccdcd36cfbe77.jpg)
