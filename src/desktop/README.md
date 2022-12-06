@@ -19,11 +19,11 @@ actions:
     icon: home
 features:
   - title: 技术栈
-    icon: open
+    icon: technology
     details: Electron 13 以及 Vue 3
 
   - title: 支持平台
-    icon: desktop
+    icon: platform
     details: Windows 7 及以上 ， Mac OS 以及 Linux
 ---
 
@@ -36,6 +36,8 @@ features:
   <a style="margin-left: 5px;" href="https://electronjs.org/releases/stable"><img src="https://img.shields.io/github/package-json/dependency-version/lyswhut/lx-music-desktop/dev/electron/master" alt="Electron version"></a>
   <a style="margin-left: 5px;" href="https://github.com/lyswhut/lx-music-desktop/tree/dev"><img src="https://img.shields.io/github/package-json/v/lyswhut/lx-music-desktop/dev" alt="Dev branch version"></a>
 </p>
+
+---
 
 :::tip
 

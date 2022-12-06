@@ -6,7 +6,7 @@ export default defineUserConfig({
   plugins: [
     docsearchPlugin({
       appId: 'GMSOAAKLNU',
-      apiKey: '1838a8e5824473382c013aa4b546daee',
+      apiKey: 'b4688310f0b91740ad80c79999bc5ac7',
       indexName: 'lxmusic',
       // Set debug to true if you want to inspect the modal
       // 你的选项

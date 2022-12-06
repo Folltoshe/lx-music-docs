@@ -25,7 +25,7 @@ export default hopeTheme({
     url: 'https://github.com/Folltoshe',
   },
 
-  iconAssets: '//at.alicdn.com/t/c/font_3583800_l6hvlb76j0q.css',
+  iconAssets: '//at.alicdn.com/t/c/font_3583800_prbbpd461e.css',
   logo: '/logo.svg',
 
   repo: 'https://github.com/folltoshe/lx-music-docs',
