@@ -1,7 +1,7 @@
 import { sidebar } from 'vuepress-theme-hope'
 
 export const mobileSidebar = sidebar({
-  '/mobile/': [
+  '/mobile/document/': [
     {
       text: '列表和歌单',
       icon: 'songlist',
