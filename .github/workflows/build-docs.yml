@@ -40,11 +40,11 @@ jobs:
           branch: gh-pages
           folder: src/.vuepress/dist
 
-      - name: 部署文档至服务器
+      - name: 上传服务器
         uses: wlixcc/SFTP-Deploy-Action@v1.0
         with:
           username: 'root' #ssh user name
           server: '${{ secrets.SERVER_IP }}' #引用之前创建好的secret
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }} #引用之前创建好的secret
           local_path: './src/.vuepress/dist/*' # 对应我们项目build的文件夹路径
-          remote_path: '/servers/doc/test'
+          remote_path: '/local/service/view/doc/lx-music-docs'
