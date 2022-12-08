@@ -12,13 +12,13 @@ export const desktopNavbar = navbar([
   },
   { text: '软件下载', icon: 'download', link: '/download/' },
   { text: '问题反馈', icon: 'report', link: '/report/' },
-  {
-    text: '切换版本',
-    // activeMatch: '^/document/desktop/$',
-    prefix: '/desktop/document/',
-    children: [
-      { text: '1.x.x', link: 'v1/' },
-      { text: '2.x.x', link: 'v2/' },
-    ],
-  },
+  // {
+  //   text: '切换版本',
+  //   // activeMatch: '^/document/desktop/$',
+  //   prefix: '/desktop/document/',
+  //   children: [
+  //     { text: '1.x.x', link: 'v1/' },
+  //     { text: '2.x.x', link: 'v2/' },
+  //   ],
+  // },
 ])
