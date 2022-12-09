@@ -40,17 +40,17 @@ features:
 
 ---
 
-## 一封信
+## 文档作者的一封信
 
 由于本人因为学业原因，以后将不会频繁更新文档，如果文档中没有你找到的问题，你可以去看[落雪音乐助手官方文档](https://lxmusic.toside.cn)
 
 当然，如果你有时间的话，欢迎帮我改进这份文档[github 地址](https://github.com/Folltoshe/lx-music-docs)，谢谢!
 
-By Folltoshe
+By [Folltoshe](https://github.com/Folltoshe) in 2022
 
 ---
 
-### [以后文档的另一个维护人](https://github.com/helliplhm-qwq/)想说的一些话
+## 以后文档的另一个维护人想说的一些话
 
 我和 Folltoshe 都是初中生，因为学业原因，以后文档更新也不会再那么频繁了。
 

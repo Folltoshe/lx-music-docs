@@ -24,7 +24,11 @@ features:
 
   - title: 支持平台
     icon: platform
-    details: Windows 7 及以上 ， Mac OS 以及 Linux
+    details: Windows，Mac OS 以及 Linux
+
+  - title: 特别说明
+    icon: info
+    details: 不支持 Windows 7 以下的设备
 ---
 
 ---
