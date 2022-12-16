@@ -79,3 +79,9 @@ By [@helloplhm-qwq](https://github.com/helloplhm-qwq) in 2022/12/01
 ——老千《江南外传》
 
 :::
+
+:::info
+
+![](https://v2.jinrishici.com/one.svg)
+
+:::
