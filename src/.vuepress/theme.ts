@@ -1,6 +1,6 @@
 import { hopeTheme } from 'vuepress-theme-hope'
-import { defaultNavbar, desktopNavbar, mobileNavbar } from './navbar/index'
-import { defaultSidebar, desktopSidebar, mobileSidebar } from './sidebar/index'
+import { indexNavbar, desktopNavbar, mobileNavbar } from './navbar/index'
+import { indexSidebar, desktopSidebar, mobileSidebar } from './sidebar/index'
 
 export default hopeTheme({
   fullscreen: true,
@@ -13,9 +13,9 @@ export default hopeTheme({
     right: ['Repo', 'Outlook', 'Search'],
   },
   themeColor: {
+    green: '#3eaf7c',
     blue: '#2196f3',
     red: '#f26d6d',
-    green: '#3eaf7c',
     orange: '#fb9b5f',
   },
 
@@ -28,10 +28,10 @@ export default hopeTheme({
   iconAssets: '//at.alicdn.com/t/c/font_3583800_prbbpd461e.css',
   logo: '/logo.svg',
 
-  repo: 'https://github.com/folltoshe/lx-music-docs',
+  repo: 'https://github.com/Folltoshe/lx-music-docs',
 
   docsBranch: 'main',
-  docsRepo: 'https://github.com/folltoshe/lx-music-docs',
+  docsRepo: 'https://github.com/Folltoshe/lx-music-docs',
   docsDir: 'src',
 
   pageInfo: ['Author', 'Original', 'Date', 'Category', 'Tag', 'ReadingTime'],
@@ -39,13 +39,13 @@ export default hopeTheme({
   displayFooter: true,
 
   metaLocales: {
-    editLink: '在 GitHub 上编辑此页',
+    editLink: '在GitHub上编辑此页',
   },
 
   locales: {
     '/': {
-      navbar: defaultNavbar,
-      sidebar: defaultSidebar,
+      navbar: indexNavbar,
+      sidebar: indexSidebar,
     },
     '/desktop/': {
       navbar: desktopNavbar,
@@ -72,7 +72,6 @@ export default hopeTheme({
       imageSize: true,
       include: true,
       katex: true,
-      lazyLoad: true,
       mark: true,
       mermaid: true,
       playground: {
@@ -97,7 +96,7 @@ export default hopeTheme({
       sub: true,
       sup: true,
       tabs: true,
-      vpre: true,
+      vPre: true,
       vuePlayground: true,
     },
 
@@ -106,6 +105,34 @@ export default hopeTheme({
       cacheHTML: true,
       cachePic: true,
       appendBase: true,
+      manifest: {
+        name: 'LX-Music-Docs',
+        icons: [
+          {
+            src: '/icon/512.png',
+            sizes: '512x512',
+            purpose: 'maskable',
+            type: 'image/png',
+          },
+          {
+            src: '/icon/192.png',
+            sizes: '192x192',
+            purpose: 'maskable',
+            type: 'image/png',
+          },
+          {
+            src: '/icon/512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+          {
+            src: '/icon/192.png',
+            sizes: '192x192',
+            type: 'image/png',
+          },
+        ],
+      },
+
       apple: {
         icon: '/icon/152.png',
         statusBarColor: 'black',
