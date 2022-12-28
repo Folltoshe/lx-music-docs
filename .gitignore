@@ -1,18 +1,5 @@
-node_modules
-.cache 
-.temp
-dist
-
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
 node_modules/
 src/.vuepress/.cache/
 src/.vuepress/.temp/
 src/.vuepress/dist/
-
-# node_modules/
-# src\src/.vuepress/.cache/
-# src\src/.vuepress/.temp/
-# src\src/.vuepress/dist/
