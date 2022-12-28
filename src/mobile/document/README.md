@@ -2,12 +2,24 @@
 title: 常见问题
 ---
 
-## 如何使用
+:::info
 
-- 文档右上角的三条横线用来切换大分区
+- 这里汇总了**移动端**使用时的常见问题。
 
-- 如果有多个内容在文档右上角也会有三条横线,可以点击切换
+- 如需反馈请查看[反馈注意事项](../../report/)
 
-- 如果还是不懂就亲自点击一下!
+- 如需下载软件请查看[下载页面](../../download/)
 
-- 你可以使用文档**右上角**的搜索框来搜索你的问题!
+- [软件更新日志](https://github.com/lyswhut/lx-music-mobile/blob/master/CHANGELOG.md)
+
+:::
+
+## 如何使用此文档
+
+### 电脑端
+
+![desktop](https://tvax2.sinaimg.cn/large/007SWtfrly1h9jegdcgmkj30y10i178p.jpg)
+
+### 移动端
+
+![mobile](https://tva3.sinaimg.cn/large/007SWtfrly1h9jeqgflxhj30u01t0afn.jpg)

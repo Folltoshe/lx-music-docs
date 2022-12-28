@@ -2,7 +2,7 @@
 home: true
 icon: mobile
 sidebar: true
-title: 移动端
+title: 主页
 category:
   - 常见问题
   - 移动端
@@ -17,6 +17,9 @@ actions:
   - text: '  主页'
     link: /
     icon: home
+  - text: '  仓库'
+    link: https://github.com/lyswhut/lx-music-mobile
+    icon: github
 features:
   - title: 技术栈
     icon: technology
@@ -31,8 +34,6 @@ features:
     details: 不计划支持 IOS(苹果手机系统) 以及 Android 版本为6以下的设备
 ---
 
----
-
 <p align="center">
   <a style="margin-left: 5px;" href="https://github.com/lyswhut/lx-music-mobile/releases"><img src="https://img.shields.io/github/release/lyswhut/lx-music-mobile" alt="Release version"></a>
   <a style="margin-left: 5px;" href="https://github.com/lyswhut/lx-music-mobile/actions/workflows/release.yml"><img src="https://github.com/lyswhut/lx-music-mobile/workflows/Build/badge.svg" alt="Build status"></a>
@@ -40,17 +41,3 @@ features:
   <a style="margin-left: 5px;" href="https://github.com/facebook/react-native"><img src="https://img.shields.io/github/package-json/dependency-version/lyswhut/lx-music-mobile/react-native/master" alt="React native version"></a>
   <a style="margin-left: 5px;" href="https://github.com/lyswhut/lx-music-mobile/tree/dev"><img src="https://img.shields.io/github/package-json/v/lyswhut/lx-music-mobile/dev" alt="Dev branch version"></a>
 </p>
-
----
-
-:::tip
-
-- 这里汇总了**移动端**使用时的常见问题。
-
-- 如需反馈请查看[反馈注意事项](../../report/)
-
-- 如需下载软件请查看[下载页面](../../download/)
-
-- [软件更新日志](https://github.com/lyswhut/lx-music-mobile/blob/master/CHANGELOG.md)
-
-:::

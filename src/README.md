@@ -38,25 +38,27 @@ features:
     details: 本项目支持在Windows、Mac OS、Linux、Android平台上运行。不计划支持IOS
 ---
 
----
+:::info
 
-## 文档作者的一封信
+彼时春衫少年郎，笑看风华不知愁。
 
-由于本人因为学业原因，以后将不会频繁更新文档，如果文档中没有你找到的问题，你可以去看[落雪音乐助手官方文档](https://lxmusic.toside.cn)
+——老千《江南外传》
 
-当然，如果你有时间的话，欢迎帮我改进这份文档[github 地址](https://github.com/Folltoshe/lx-music-docs)，谢谢!
+:::
+
+### 一封信
+
+由于本人因为学业原因，以后将不会频繁更新文档，如果文档中没有你找到的问题，你可以去看 [官方文档](https://lxmusic.toside.cn)
+
+当然，如果你有时间的话，欢迎帮我改进这份[文档](https://github.com/Folltoshe/lx-music-docs)，谢谢!
 
 By [Folltoshe](https://github.com/Folltoshe) in 2022
 
----
-
-## 以后文档的另一个维护人想说的一些话
+#### 以后文档的另一个维护人想说的一些话
 
 我和 Folltoshe 都是初中生，因为学业原因，以后文档更新也不会再那么频繁了。
 
 以后 LX Music 不会再支持无损了，请用其他软件或者使用支持无损的自定义音源。
-
-如果你仅仅只是为了无损，那请散了吧，LX Music 可能并不适合你
 
 LX Music 是一个很棒的项目，落雪无痕大佬也为它付出了很多。
 
@@ -68,14 +70,4 @@ LX Music 一路走来没有任何无关的功能，只是纯粹地做了一件�
 
 所以还请多一点理解，毕竟大家也应该不希望这么好的一个软件消失掉吧。
 
-彼方尚有荣光在，何须悲叹少年轻。
-
 By [@helloplhm-qwq](https://github.com/helloplhm-qwq) in 2022/12/01
-
-:::info
-
-彼时春衫少年郎，笑看风华不知愁。
-
-——老千《江南外传》
-
-:::

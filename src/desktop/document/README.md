@@ -2,14 +2,24 @@
 title: 常见问题
 ---
 
-[2.x.x 常见问题](./v2/)
+:::info
 
-:::tip
+- 这里汇总了**桌面端**使用时的常见问题。
 
-点击旁边列表切换子项
+- 如需**反馈**请查看[反馈注意事项](/report/)
 
-手机端点击左上角三条横线
+- 如需**下载软件**请查看[下载页面](/download/)
 
-你可以使用文档**右上角**的搜索框来搜索你的问题!
+- [软件更新日志](https://github.com/lyswhut/lx-music-desktop/blob/master/CHANGELOG.md)
 
 :::
+
+## 如何使用此文档
+
+### 电脑端
+
+![desktop](https://tvax2.sinaimg.cn/large/007SWtfrly1h9jegdcgmkj30y10i178p.jpg)
+
+### 移动端
+
+![mobile](https://tva3.sinaimg.cn/large/007SWtfrly1h9jeqgflxhj30u01t0afn.jpg)
