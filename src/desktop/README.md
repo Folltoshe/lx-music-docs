@@ -41,3 +41,7 @@ features:
   <a style="margin-left: 5px;" href="https://electronjs.org/releases/stable"><img src="https://img.shields.io/github/package-json/dependency-version/lyswhut/lx-music-desktop/dev/electron/master" alt="Electron version"></a>
   <a style="margin-left: 5px;" href="https://github.com/lyswhut/lx-music-desktop/tree/dev"><img src="https://img.shields.io/github/package-json/v/lyswhut/lx-music-desktop/dev" alt="Dev branch version"></a>
 </p>
+
+<p class="actions" style="transition: transform 0.25s ease-in-out 0.12s, opacity 0.25s ease-in-out 0.12s; transform: translateY(0px); opacity: 1;"><a href="/desktop/" class="nav-link action-button primary" aria-label="  桌面端"><span class="font-icon icon iconfont icon-desktop"></span>  桌面端<!----></a><a href="/mobile/" class="nav-link action-button primary" aria-label="  移动端"><span class="font-icon icon iconfont icon-mobile"></span>  移动端<!----></a><a href="/download/" class="nav-link action-button default" aria-label="  软件下载"><span class="font-icon icon iconfont icon-download"></span>  软件下载<!----></a><a href="/report/" class="nav-link action-button default" aria-label="  问题反馈"><span class="font-icon icon iconfont icon-report"></span>  问题反馈<!----></a></p>
+
+<a href="/mobile/" class="buttons">121</a>
