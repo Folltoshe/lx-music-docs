@@ -1,8 +1,8 @@
 import { sidebar } from 'vuepress-theme-hope'
 
 export const desktopSidebar = sidebar({
-  '/desktop/document/': [
-    '/desktop/document/v2/',
+  '/desktop/': [
+    '/desktop/v2/',
     {
       text: '自定义源',
       icon: 'diy',
@@ -66,7 +66,7 @@ export const desktopSidebar = sidebar({
     'license.md',
     'use-source.md',
   ],
-  '/desktop/document/v2/': [
+  '/desktop/v2/': [
     {
       text: '列表和歌单',
       icon: 'songlist',

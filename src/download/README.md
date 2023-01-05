@@ -12,10 +12,10 @@ tag:
 请先看完以下这几点!!!!!!!
 
 若网盘链接无法打开:
-请尝试将lanzoui改为lanzoux/lanzouj/lanzoue任意一个查看能否打开 或 \[
+请尝试将 lanzoui 改为 lanzoux/lanzouj/lanzoue 任意一个查看能否打开 或 \[
 [百度](https://www.baidu.com/s?wd=蓝奏云链接打不开) or [必应](https://cn.bing.com/search?q=蓝奏云链接打不开) \]
 
-若你不知道该下载哪一个版本请参考[安装包解析](#软件安装包说明)
+若你不知道该下载哪一个版本请参考[安装包解析](#安装包说明)
 
 推荐使用网盘下载!!!!!如果网盘里面没有你想要的版本可以前往 **Github 发布页**下载!!!!!
 
@@ -23,7 +23,7 @@ tag:
 
 ## 下载
 
-**推荐国内用户使用网盘下载，软件发布更新时，此网盘的安装包会同步更新到最新版本。如果网盘里面没有你想要的版本再用 Github 下载!!!!!!!**
+==推荐国内用户使用网盘下载，软件发布更新时，此网盘的安装包会同步更新到最新版本。如果网盘里面没有你想要的版本再用 Github 下载!!!!!!!==
 
 ### 网盘下载
 
@@ -37,14 +37,14 @@ tag:
 
 [手机版](https://github.com/lyswhut/lx-music-mobile/releases)
 
-## 软件安装包说明
+## 安装包说明
 
 文件名带 `win_` 或带 `Setup` 的是在 Windows 系统上运行的版本；
 
 其中以 `Setup.exe` 结尾的版本为安装版，带自动更新功能，可自动更新软件（但若你所在网络访问 GitHub 较慢，则可能会更新失败
 ，这时需要手动下载安装包覆盖更新）；
 
-以 `green.7z` 结尾的版本为免安装版，解压后可直接运行里面的 `lx-music-desktop.exe`，但自动更新功能不可用；
+以 `green.7z` 结尾的版本为免安装版，==完全解压==后可直接运行里面的 `lx-music-desktop.exe`，但自动更新功能不可用；
 
 带有 `x64` 的为 64 位的系统版本，带 `x86` 的为 32 位的系统版本；
 
@@ -77,4 +77,4 @@ tag:
 
 ## 测试版下载
 
-测试版可以在[GitHub Actions-PC版](https://github.com/lyswhut/lx-music-desktop/actions)|[GitHub Actions-移动版](https://github.com/lyswhut/lx-music-mobile/actions)或`测试群`中下载
+测试版可以在[GitHub Actions-PC 版](https://github.com/lyswhut/lx-music-desktop/actions)|[GitHub Actions-移动版](https://github.com/lyswhut/lx-music-mobile/actions)或`测试群`中下载

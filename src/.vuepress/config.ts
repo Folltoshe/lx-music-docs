@@ -3,6 +3,7 @@ import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 import { hopeTheme } from 'vuepress-theme-hope'
 import { indexNavbar, desktopNavbar, mobileNavbar } from './navbar/index'
 import { indexSidebar, desktopSidebar, mobileSidebar } from './sidebar/index'
+import * as path from 'path'
 
 export default defineUserConfig({
   plugins: [
@@ -56,13 +57,12 @@ export default defineUserConfig({
     toc: true,
 
     navbarLayout: {
-      left: ['Brand'],
-      center: ['Links'],
+      left: ['Brand', 'Links'],
+      center: [],
       right: ['Repo', 'Outlook', 'Search'],
     },
     themeColor: {
       green: '#3eaf7c',
-      blue: '#2196f3',
       red: '#f26d6d',
       orange: '#fb9b5f',
     },
@@ -186,6 +186,7 @@ export default defineUserConfig({
       },
     },
   }),
+
   locales: {
     '/': {
       lang: 'zh-CN',
@@ -204,6 +205,5 @@ export default defineUserConfig({
     },
   },
   base: '/',
-  // theme,
   shouldPrefetch: false,
 })
