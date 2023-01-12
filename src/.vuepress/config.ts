@@ -57,9 +57,9 @@ export default defineUserConfig({
     toc: true,
 
     navbarLayout: {
-      left: ['Brand', 'Links'],
+      left: ['Brand'],
       center: [],
-      right: ['Repo', 'Outlook', 'Search'],
+      right: ['Links', 'Repo', 'Outlook', 'Search'],
     },
     themeColor: {
       green: '#3eaf7c',
@@ -148,7 +148,7 @@ export default defineUserConfig({
         cachePic: true,
         appendBase: true,
         manifest: {
-          name: 'LX-Music-Docs',
+          name: 'LX Music Docs',
           icons: [
             {
               src: '/icon/512.png',

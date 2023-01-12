@@ -9,35 +9,28 @@ tag:
 
 :::danger
 
-请先看完以下这几点!!!!!!!
-
 若网盘链接无法打开:
 请尝试将 lanzoui 改为 lanzoux/lanzouj/lanzoue 任意一个查看能否打开 或 \[
 [百度](https://www.baidu.com/s?wd=蓝奏云链接打不开) or [必应](https://cn.bing.com/search?q=蓝奏云链接打不开) \]
-
-若你不知道该下载哪一个版本请参考[安装包解析](#安装包说明)
 
 推荐使用网盘下载!!!!!如果网盘里面没有你想要的版本可以前往 **Github 发布页**下载!!!!!
 
 :::
 
-## 下载
-
-==推荐国内用户使用网盘下载，软件发布更新时，此网盘的安装包会同步更新到最新版本。如果网盘里面没有你想要的版本再用 Github 下载!!!!!!!==
-
-### 网盘下载
+## 桌面端
 
 [网盘链接](https://www.lanzoui.com/b0bf2cfa/)
 
 密码：`glqw`
 
-### Github 下载
+:::tip
+如果网盘中没有你想要的版本，再使用 Github 下载！！！Github 打不开或者下载速度慢都是正常现象！！
 
-[电脑版](https://github.com/lyswhut/lx-music-desktop/releases)
+[链接](https://github.com/lyswhut/lx-music-desktop/releases)
 
-[手机版](https://github.com/lyswhut/lx-music-mobile/releases)
+:::
 
-## 安装包说明
+### 安装包说明
 
 文件名带 `win_` 或带 `Setup` 的是在 Windows 系统上运行的版本；
 
@@ -64,6 +57,21 @@ tag:
 以 `.deb` 结尾的文件为在 Linux 系统上运行的版本，软件还有 `.rpm/AppImage/pacman` 格式的 Linux 包，但没有上传到网盘，可自
 行到项目发布页面下载。
 
+## 移动端
+
+[网盘链接](https://www.lanzoui.com/b0bf2cfa/)
+
+密码：`glqw`
+
+:::tip
+如果网盘中没有你想要的版本，再使用 Github 下载！！！Github 打不开或者下载速度慢都是正常现象！！
+
+[链接](https://github.com/lyswhut/lx-music-mobile/releases)
+
+:::
+
+### 安装包说明
+
 以 `.apk` 结尾的是安卓手机版，本网盘提供两种安卓版本，优先下载 `arm64-v8a` 版，若无法安装再下载 `universal` 版
 :::info
 
@@ -74,7 +82,3 @@ tag:
 :::
 
 另外还有 `armeabi-v7a`、`x86_64`等版本，但没有上传到网盘，若需要可自行到项目发布页面下载。
-
-## 测试版下载
-
-测试版可以在[GitHub Actions-PC 版](https://github.com/lyswhut/lx-music-desktop/actions)|[GitHub Actions-移动版](https://github.com/lyswhut/lx-music-mobile/actions)或`测试群`中下载

@@ -94,7 +94,7 @@ strong {
   background: var(--theme-color);
 }
 
-.link-button-item .content {
+.link-button-item span {
   cursor: pointer;
   // display: flex;
   position: relative;
@@ -110,7 +110,7 @@ strong {
   line-height: 0px;
 }
 
-.link-button-item .content:after {
+.link-button-item span:after {
   content: '»';
   opacity: 0;
   position: absolute;
@@ -122,11 +122,11 @@ strong {
   transition: 1s;
 }
 
-.link-button-item:hover .content {
+.link-button-item:hover span {
   padding-right: 40px;
 }
 
-.link-button-item:hover .content:after {
+.link-button-item:hover span:after {
   opacity: 1;
   right: 0;
 }

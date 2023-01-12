@@ -13,11 +13,11 @@ title: 常见问题
 
 <div class="link-button">
   <button class="link-button-item">
-    <p class="font-icon icon iconfont icon-home">
-      <span class="content">主页12122323</span>
-    </p>
+    <span class="font-icon icon iconfont icon-home">主页</span>
   </button>
 
-<button class="link-button-item"><span class="font-icon icon iconfont icon-home"> 主页</span></button>
+<button class="link-button-item">
+  <span class="font-icon icon iconfont icon-home">主页</span>
+</button>
 
 </div>
