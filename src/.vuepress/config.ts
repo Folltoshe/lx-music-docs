@@ -73,7 +73,7 @@ export default defineUserConfig({
       url: 'https://github.com/Folltoshe',
     },
 
-    iconAssets: '//at.alicdn.com/t/c/font_3583800_prbbpd461e.css',
+    iconAssets: 'https://at.alicdn.com/t/c/font_3583800_prbbpd461e.css',
     logo: '/logo.svg',
 
     repo: 'https://github.com/Folltoshe/lx-music-docs',

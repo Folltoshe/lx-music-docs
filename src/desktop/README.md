@@ -1,6 +1,9 @@
 ---
-title: 常见问题
-# home: true
+title: 主页
+icon: desktop
+home: true
+heroText: LX Music For Desktop
+tagline: 一个基于 Electron + Vue 开发的音乐软件。
 ---
 
 <p align="center">
@@ -11,13 +14,11 @@ title: 常见问题
   <a style="margin-left: 5px;" href="https://github.com/lyswhut/lx-music-desktop/tree/dev"><img src="https://img.shields.io/github/package-json/v/lyswhut/lx-music-desktop/dev" alt="Dev branch version"></a>
 </p>
 
-<div class="link-button">
-  <button class="link-button-item">
-    <span class="font-icon icon iconfont icon-home">主页</span>
+<div class="button-home-group">
+  <button class="button-home-item">
+    <div class="button-home-icon">
+      <span class="font-icon icon iconfont icon-home"></span>
+    </div>
+    <span class="button-home-content">主页</span>
   </button>
-
-<button class="link-button-item">
-  <span class="font-icon icon iconfont icon-home">主页</span>
-</button>
-
 </div>

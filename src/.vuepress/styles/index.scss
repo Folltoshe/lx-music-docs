@@ -55,78 +55,79 @@ strong {
 }
 
 // 字体
-// @import url(https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.6.0/style.css);
-// @import url(https://unpkg.com/lxgw-wenkai-lite-webfont@1.6.0/style.css);
-@import url(https://jsd.cdn.zzko.cn/npm/lxgw-wenkai-lite-webfont@1.6.0/style.css);
+// @import url(https://jsd.cdn.zzko.cn/npm/lxgw-wenkai-lite-webfont@1.6.0/style.css);
+@font-face {
+  font-family: 'HYWenHei 85W';
+  src: url(https://jsd.cdn.zzko.cn/npm/genshin-fonts@1.0.1/output.ttf);
+}
+// :root {
+//   --font-family-fancy: 'LXGW WenKai Lite', sans-serif;
+//   --font-family: 'LXGW WenKai Lite', sans-serif;
+//   --font-family-code: 'LXGW WenKai Lite', sans-serif;
+// }
 :root {
-  --font-family-fancy: 'LXGW WenKai Lite', sans-serif;
-  --font-family: 'LXGW WenKai Lite', sans-serif;
-  --font-family-code: 'LXGW WenKai Lite', sans-serif;
+  --font-family-fancy: 'HYWenHei 85W', sans-serif;
+  --font-family: 'HYWenHei 85W', sans-serif;
+  --font-family-code: 'HYWenHei 85W', sans-serif;
 }
 * {
-  font-family: 'LXGW WenKai Lite', sans-serif;
+  font-family: 'HYWenHei 85W', sans-serif;
 }
 
 .nav-links {
   margin-left: 20px !important;
 }
 
-// 按钮
-.link-button {
+.button-home-group {
 }
-
-.link-button-item {
-  display: inline-block;
-  // text-decoration: none;
-  overflow: hidden;
-  line-height: 1.5;
-  border-radius: 28px;
-  border-color: var(--theme-color);
+.button-home-item {
   text-align: center;
-  padding: 0.5em 1.5rem;
-  margin: 0.8rem;
-  transition: all 1s;
-  cursor: pointer;
-  // vertical-align: middle;
-}
-
-.link-button-item:hover {
-  background: var(--theme-color);
-}
-
-.link-button-item span {
-  cursor: pointer;
-  // display: flex;
-  position: relative;
-  transition: 1s;
-  margin: 0.4rem;
+  width: 200px;
   font-size: 20px;
-  justify-content: center;
+  line-height: 10px;
+  height: 50px;
+  border-radius: 26px;
+  background-color: #687aa1;
+  border: 0px;
+  cursor: pointer;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
+  user-select: none;
 }
-
-.link-button-item p {
+.button-home-content {
+  text-align: center;
+  color: #ffffff;
+  margin-left: 20px;
+}
+.button-home-icon {
+  margin-left: 6px;
+  width: 30px;
+  height: 30px;
+  // border-style: solid;
+  border-radius: 20px;
+  border-left-color: rgb(255, 221, 0);
+  background-color: #656565;
+  color: rgb(255, 221, 0);
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  animation: donut-spin 1.2s linear infinite;
+}
+.button-home-icon span {
   font-size: 20px;
-  line-height: 0px;
+  line-height: 30px;
+  text-align: center;
 }
 
-.link-button-item span:after {
-  content: '»';
-  opacity: 0;
-  position: absolute;
-  // top: 0.5px;
-  // text-align: center;
-  // border: 0;
-  // margin-top: 0;
-  right: -40px;
-  transition: 1s;
-}
+@keyframes donut-spin {
+  0% {
+    transform: rotate(0deg);
+  }
 
-.link-button-item:hover span {
-  padding-right: 40px;
-}
-
-.link-button-item:hover span:after {
-  opacity: 1;
-  right: 0;
+  100% {
+    transform: rotate(360deg);
+  }
 }
