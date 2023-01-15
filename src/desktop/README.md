@@ -4,6 +4,30 @@ icon: desktop
 home: true
 heroText: LX Music For Desktop
 tagline: 一个基于 Electron + Vue 开发的音乐软件。
+heroImage: /logo.svg
+actions:
+  - text: '  常见问题'
+    link: document/
+    type: primary
+    icon: question
+  - text: '  主页'
+    link: /
+    icon: home
+  - text: '  仓库'
+    link: https://github.com/lyswhut/lx-music-desktop
+    icon: github
+features:
+  - title: 技术栈
+    icon: technology
+    details: Electron 13 以及 Vue 3
+
+  - title: 支持平台
+    icon: platform
+    details: Windows，Mac OS 以及 Linux
+
+  - title: 特别说明
+    icon: info
+    details: 不支持 Windows 7 以下的设备
 ---
 
 <p align="center">
@@ -14,11 +38,14 @@ tagline: 一个基于 Electron + Vue 开发的音乐软件。
   <a style="margin-left: 5px;" href="https://github.com/lyswhut/lx-music-desktop/tree/dev"><img src="https://img.shields.io/github/package-json/v/lyswhut/lx-music-desktop/dev" alt="Dev branch version"></a>
 </p>
 
-<div class="button-home-group">
-  <button class="button-home-item">
-    <div class="button-home-icon">
-      <span class="font-icon icon iconfont icon-home"></span>
-    </div>
-    <span class="button-home-content">主页</span>
-  </button>
-</div>
+<!-- TODO... -->
+<!-- <div class="button-home-group">
+  <a href="/desktop/">
+    <button class="button-home-item">
+      <div class="button-home-icon">
+        <span class="font-icon icon iconfont icon-home"></span>
+      </div>
+      <span class="button-home-content">主页</span>
+    </button>
+  </a>
+</div> -->

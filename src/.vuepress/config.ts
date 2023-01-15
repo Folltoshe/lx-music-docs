@@ -3,7 +3,6 @@ import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 import { hopeTheme } from 'vuepress-theme-hope'
 import { indexNavbar, desktopNavbar, mobileNavbar } from './navbar/index'
 import { indexSidebar, desktopSidebar, mobileSidebar } from './sidebar/index'
-import * as path from 'path'
 
 export default defineUserConfig({
   plugins: [
@@ -73,7 +72,7 @@ export default defineUserConfig({
       url: 'https://github.com/Folltoshe',
     },
 
-    iconAssets: 'https://at.alicdn.com/t/c/font_3583800_prbbpd461e.css',
+    iconAssets: 'https://at.alicdn.com/t/c/font_3583800_pjiupl73x4f.css',
     logo: '/logo.svg',
 
     repo: 'https://github.com/Folltoshe/lx-music-docs',
