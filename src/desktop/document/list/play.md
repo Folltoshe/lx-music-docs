@@ -1,5 +1,5 @@
 ---
-title: 音乐列表播放机制
+title: 列表播放机制
 category:
   - 常见问题
   - 桌面端
@@ -31,10 +31,8 @@ tag:
 
 :::info
 
-相关内容
-
 - [列表多选](./list-multiple-selection)
-- [可用的鼠标、键盘快捷操作](./hotkey)
-- [播放整个歌单或排行榜](./list-play-all)
+
+- [播放整个歌单或排行榜](./play-all-list.md)
 
 :::

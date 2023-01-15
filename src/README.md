@@ -48,7 +48,7 @@ features:
 
 ### 一封信
 
-由于本人因为学业原因，以后将不会频繁更新文档，如果文档中没有你找到的问题，你可以去看 [官方文档](https://lxmusic.toside.cn)
+因为学业原因，本人以后将不会频繁更新文档，如果文档中没有你找到的问题，你可以去看 [官方文档](https://lxmusic.toside.cn)
 
 当然，如果你有时间的话，欢迎帮我改进这份[文档](https://github.com/Folltoshe/lx-music-docs)，谢谢!
 

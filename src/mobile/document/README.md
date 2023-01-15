@@ -14,6 +14,7 @@ title: 常见问题
 
 :::
 
+<!--
 ## 如何使用此文档
 
 ### 电脑端
@@ -22,4 +23,4 @@ title: 常见问题
 
 ### 移动端
 
-![mobile](https://tva3.sinaimg.cn/large/007SWtfrly1h9jeqgflxhj30u01t0afn.jpg)
+![mobile](https://shp.qpic.cn/collector/2964359326/10fff8c0-5d0a-4839-bd9c-0b379eb72d9b/640?mType=Other) -->

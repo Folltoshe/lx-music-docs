@@ -34,7 +34,7 @@ tag:
 
 想要知道是不是自己网络的问题可以看看`http://ts.tempmusics.tk`能不能在浏览器打开，浏览器显示 **404** 是正常的，如果不是 404
 那就证明所在网络无法访问接口服务器。若网页无法打开或打来不是 404，则应该是 **DNS** 的问题，可以尝
-试[修改 DNS 和 HOST](./revise-dns-and-host)
+试[修改 DNS 和 HOST](../common/revise-dns-host.md)
 
 ## 提示 `Api is not fond`或者歌曲为`灰色`,无法点击
 

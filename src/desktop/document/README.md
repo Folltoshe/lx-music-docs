@@ -14,7 +14,7 @@ title: 常见问题
 
 :::
 
-## 如何使用此文档
+<!-- ## 如何使用此文档
 
 ### 电脑端
 
@@ -22,4 +22,4 @@ title: 常见问题
 
 ### 移动端
 
-![mobile](https://tva3.sinaimg.cn/large/007SWtfrly1h9jeqgflxhj30u01t0afn.jpg)
+![mobile](https://tva3.sinaimg.cn/large/007SWtfrly1h9jeqgflxhj30u01t0afn.jpg) -->
