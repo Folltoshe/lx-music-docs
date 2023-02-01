@@ -71,19 +71,24 @@
   <HopeHomePage> </HopeHomePage>
 </template>
 
-<script setup lang="ts">
+<script lang="ts">
 import HopeHomePage from 'vuepress-theme-hope/components/HomePage.js'
+import axios from 'axios'
 
-const request = new XMLHttpRequest()
-const url = 'https://v1.hitokoto.cn/'
-request.open('GET', url)
-request.send()
+export default {
+  mounted() {
+    const url = 'https://v1.hitokoto.cn/'
+    const request = axios.get(url)
 
-request.onloadend = e => {
-  if (request.status != 200) document.getElementById('say').innerHTML = '一言加载失败'
-  const response = JSON.parse(request.response)
-  document.getElementById('say').innerHTML = `${response.hitokoto}`
-  document.getElementById('say-creator').innerHTML = `--  ${response.creator}`
+    request.then(e => {
+      if (e.status != 200) {
+        document.getElementById('say').innerHTML = '一言加载失败'
+        document.getElementById('say-creator').innerHTML = `作者加载失败`
+      }
+      document.getElementById('say').innerHTML = `${e.data.hitokoto}`
+      document.getElementById('say-creator').innerHTML = `--  ${e.data.creator}`
+    })
+  },
 }
 </script>
 
