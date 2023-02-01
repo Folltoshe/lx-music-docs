@@ -12,14 +12,16 @@ title: 常见问题
 
 - [软件更新日志](https://github.com/lyswhut/lx-music-desktop/blob/master/CHANGELOG.md)
 
+- 移动端视图请点击左上角来切换条目,右上角切换分类
+
 :::
 
-<!-- ## 如何使用此文档
+如果你无法播放请看 [无法播放](./play/cannot-play.md)
 
-### 电脑端
+如果你无法下载请看 [无法下载](./download/cannot-download.md)
 
-![desktop](https://tvax2.sinaimg.cn/large/007SWtfrly1h9jegdcgmkj30y10i178p.jpg)
+如果你无法同步请看 [无法同步](./sync-backup/sync.md)
 
-### 移动端
+如果你安装失败请看 [安装失败](./install/install-failed.md)
 
-![mobile](https://tva3.sinaimg.cn/large/007SWtfrly1h9jeqgflxhj30u01t0afn.jpg) -->
+如果要导入歌单请看 [导入歌单](./songlist/open.md)

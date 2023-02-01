@@ -12,6 +12,8 @@ title: 常见问题
 
 - [软件更新日志](https://github.com/lyswhut/lx-music-mobile/blob/master/CHANGELOG.md)
 
+- 移动端视图请点击左上角来切换条目,右上角切换分类
+
 :::
 
 <!--

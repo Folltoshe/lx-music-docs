@@ -1,5 +1,8 @@
 <template>
-  <div class="home-head">
+  <!-- 一言 -->
+  <p id="say" class="say">一言加载中...</p>
+  <p id="say-creator" class="say-creator">作者加载中...</p>
+  <!-- <div class="home-head">
     这应该是LX Music Docs今年的最后一个版本，提前祝大家新春快乐，事事顺心~
     <br />
     <br />
@@ -64,20 +67,38 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <HopeHomePage> </HopeHomePage>
 </template>
 
 <script setup lang="ts">
 import HopeHomePage from 'vuepress-theme-hope/components/HomePage.js'
+
+const request = new XMLHttpRequest()
+const url = 'https://v1.hitokoto.cn/'
+request.open('GET', url)
+request.send()
+
+request.onloadend = e => {
+  if (request.status != 200) document.getElementById('say').innerHTML = '一言加载失败'
+  const response = JSON.parse(request.response)
+  document.getElementById('say').innerHTML = `${response.hitokoto}`
+  document.getElementById('say-creator').innerHTML = `--  ${response.creator}`
+}
 </script>
 
 <style>
-.home-head {
+.say {
   padding-top: calc(var(--navbar-height) + 10px);
   text-align: center;
   width: 100%;
   font-size: 20px;
+}
+.say-creator {
+  /* padding-top: 2px; */
+  text-align: center;
+  width: 100%;
+  font-size: 17px;
 }
 
 @media screen and (max-width: 580px) {

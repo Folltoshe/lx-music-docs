@@ -37,15 +37,3 @@ features:
   <a style="margin-left: 5px;" href="https://electronjs.org/releases/stable"><img src="https://img.shields.io/github/package-json/dependency-version/lyswhut/lx-music-desktop/dev/electron/master" alt="Electron version"></a>
   <a style="margin-left: 5px;" href="https://github.com/lyswhut/lx-music-desktop/tree/dev"><img src="https://img.shields.io/github/package-json/v/lyswhut/lx-music-desktop/dev" alt="Dev branch version"></a>
 </p>
-
-<!-- TODO... -->
-<!-- <div class="button-home-group">
-  <a href="/desktop/">
-    <button class="button-home-item">
-      <div class="button-home-icon">
-        <span class="font-icon icon iconfont icon-home"></span>
-      </div>
-      <span class="button-home-content">主页</span>
-    </button>
-  </a>
-</div> -->

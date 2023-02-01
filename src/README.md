@@ -38,23 +38,23 @@ features:
     details: 本项目支持在Windows、Mac OS、Linux、Android平台上运行。不计划支持IOS
 ---
 
-:::info
+:::danger
 
-彼时春衫少年郎，笑看风华不知愁。
+LX Music 一直为 **开源免费** 软件，如果你是从 pdd 上面买的话，你就是被骗了
 
-——老千《江南外传》
+当然，如果你非要卖这个软件，请查看 [怎么在 pdd 上卖 LX Music](https://www.baidu.com/s?wd=%E6%B2%A1%E7%88%B6%E6%AF%8D%E8%AF%A5%E6%80%8E%E4%B9%88%E5%8A%9E%E6%88%B7%E5%8F%A3)
 
 :::
 
-### 一封信
+## 一封信
 
-因为学业原因，本人以后将不会频繁更新文档，如果文档中没有你找到的问题，你可以去看 [官方文档](https://lxmusic.toside.cn)
-
-当然，如果你有时间的话，欢迎帮我改进这份[文档](https://github.com/Folltoshe/lx-music-docs)，谢谢!
+如果文档中没有你找到的问题，你可以去看 [官方文档](https://lxmusic.toside.cn)。(学业原因，这个文档可能不会及时更新..
 
 By [Folltoshe](https://github.com/Folltoshe) in 2022
 
-#### 以后文档的另一个维护人想说的一些话
+---
+
+## 以后文档的另一个维护人想说的一些话
 
 我和 Folltoshe 都是初中生，因为学业原因，以后文档更新也不会再那么频繁了。
 

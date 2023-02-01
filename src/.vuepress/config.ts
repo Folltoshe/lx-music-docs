@@ -120,6 +120,7 @@ export default defineUserConfig({
         imageSize: true,
         include: true,
         mark: true,
+        mermaid: true,
         playground: {
           presets: ['ts', 'vue'],
           config: {},
