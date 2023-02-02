@@ -76,6 +76,7 @@ import HopeHomePage from 'vuepress-theme-hope/components/HomePage.js'
 import axios from 'axios'
 
 export default {
+  components: { HopeHomePage },
   mounted() {
     const url = 'https://v1.hitokoto.cn/'
     const request = axios.get(url)
