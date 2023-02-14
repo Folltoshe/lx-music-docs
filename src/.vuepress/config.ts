@@ -8,9 +8,9 @@ import * as path from 'path'
 export default defineUserConfig({
   plugins: [
     docsearchPlugin({
-      appId: 'GMSOAAKLNU',
-      apiKey: 'b4688310f0b91740ad80c79999bc5ac7',
-      indexName: 'lxmusic',
+      appId: 'FOHP6RFAIX',
+      apiKey: 'cc858ae0626388d05ee48b554d81de65',
+      indexName: 'lxmusic-folltoshe',
       // appId, apiKey 和 indexName 1是必填的
       placeholder: '搜索文档',
       translations: {
