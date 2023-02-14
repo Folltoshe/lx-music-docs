@@ -1,7 +1,6 @@
 ---
 title: 数据存储路径
 icon: 'storage'
-author: 落雪無痕
 category:
   - 常见问题
   - 桌面端

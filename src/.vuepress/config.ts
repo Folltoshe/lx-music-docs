@@ -58,9 +58,9 @@ export default defineUserConfig({
     navbarAutoHide: 'none',
 
     navbarLayout: {
-      left: ['Brand'],
+      start: ['Brand'],
       center: [],
-      right: ['Links', 'Repo', 'Outlook', 'Search'],
+      end: ['Links', 'Repo', 'Outlook', 'Search'],
     },
     themeColor: {
       green: '#3eaf7c',
@@ -117,7 +117,7 @@ export default defineUserConfig({
         echarts: true,
         flowchart: true,
         gfm: true,
-        imageSize: true,
+        imgSize: true,
         include: true,
         mark: true,
         mermaid: true,
