@@ -2,6 +2,10 @@
 @import './element/xnkl.scss';
 
 // 主页文字
+#app {
+  --sidebar-space: none;
+}
+
 .home.project .hero h1,
 .home.project .hero .description,
 .home.project .hero .action {
@@ -15,7 +19,7 @@ strong {
 
 // 主页按钮
 .home.project .hero .action-button {
-  border-radius: 45px;
+  border-radius: 40px;
 }
 
 .home.project .hero h1,
@@ -33,4 +37,14 @@ strong {
 
 .nav-links {
   margin-left: 20px !important;
+}
+
+.footer-wrapper {
+  position: relative !important;
+  left: var(--sidebar-width) !important;
+  width: calc(100% - var(--sidebar-width)) !important;
+  -webkit-padding-start: 0 !important;
+  padding-inline-start: 0 !important;
+  -webkit-padding-end: 0 !important;
+  padding-inline-end: 0 !important;
 }

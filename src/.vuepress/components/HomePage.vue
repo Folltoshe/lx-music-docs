@@ -71,7 +71,7 @@
   <HopeHomePage> </HopeHomePage>
 </template>
 
-<script lang="ts">
+<script>
 import HopeHomePage from 'vuepress-theme-hope/components/HomePage.js'
 import axios from 'axios'
 

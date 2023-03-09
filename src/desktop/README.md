@@ -1,10 +1,10 @@
 ---
 title: 主页
 icon: desktop
-home: true
+# home: true
 heroText: LX Music For Desktop
 tagline: 一个基于 Electron + Vue 开发的音乐软件。
-heroImage: /logo.svg
+# heroImage: /logo.svg
 actions:
   - text: '  常见问题'
     link: document/

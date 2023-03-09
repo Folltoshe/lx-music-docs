@@ -1,17 +1,42 @@
 import { defineUserConfig } from 'vuepress'
 import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 import { hopeTheme } from 'vuepress-theme-hope'
-import { indexNavbar, desktopNavbar, mobileNavbar } from './navbar/index'
-import { indexSidebar, desktopSidebar, mobileSidebar } from './sidebar/index'
-import * as path from 'path'
+import { Navbar } from './navbar/index'
+import { Sidebar } from './sidebar/index'
+import { getDirname, path } from '@vuepress/utils'
+import { viteBundler } from 'vuepress-vite'
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
+import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
+
+const __dirname = getDirname(import.meta.url)
 
 export default defineUserConfig({
+  bundler: viteBundler({
+    viteOptions: {
+      ssr: {
+        noExternal: ['naive-ui', 'vueuc'],
+      },
+      plugins: [
+        AutoImport({
+          imports: [
+            {
+              'naive-ui': ['useDialog', 'useMessage', 'useNotification', 'useLoadingBar'],
+            },
+          ],
+        }),
+        Components({
+          resolvers: [NaiveUiResolver()],
+        }),
+      ],
+    },
+  }),
   plugins: [
     docsearchPlugin({
       appId: 'FOHP6RFAIX',
       apiKey: 'cc858ae0626388d05ee48b554d81de65',
       indexName: 'lxmusic-folltoshe',
-      // appId, apiKey 和 indexName 1是必填的
+      // appId, apiKey 和 indexName 是必填的
       placeholder: '搜索文档',
       translations: {
         button: {
@@ -92,18 +117,9 @@ export default defineUserConfig({
     },
 
     locales: {
-      '/': {
-        navbar: indexNavbar,
-        sidebar: indexSidebar,
-      },
-      '/desktop/': {
-        navbar: desktopNavbar,
-        sidebar: desktopSidebar,
-      },
-      '/mobile/': {
-        navbar: mobileNavbar,
-        sidebar: mobileSidebar,
-      },
+      '/': { navbar: Navbar, sidebar: Sidebar },
+      '/desktop/': { navbar: Navbar, sidebar: Sidebar },
+      '/mobile/': { navbar: Navbar, sidebar: Sidebar },
     },
 
     plugins: {
@@ -198,12 +214,12 @@ export default defineUserConfig({
     '/desktop/': {
       lang: 'zh-CN',
       title: 'LX Music For Desktop',
-      description: '落雪音乐助手桌面端文档',
+      // description: '落雪音乐助手桌面端文档',
     },
     '/mobile/': {
       lang: 'zh-CN',
       title: 'LX Music For Mobile',
-      description: '落雪音乐助手移动端文档',
+      // description: '落雪音乐助手移动端文档',
     },
   },
   base: '/',
@@ -211,6 +227,7 @@ export default defineUserConfig({
   alias: {
     // 你可以在这里将别名定向到自己的组件
     // 比如这里我们将主题的主页组件改为用户 .vuepress/components 下的 HomePage.vue
-    '@theme-hope/components/HomePage': path.resolve(__dirname, './components/HomePage.vue'),
+    '@theme-hope/components/HomePage': path.resolve(__dirname, './components/homePage.vue'),
+    '@components/download': path.resolve(__dirname, './components/download.vue'),
   },
 })
