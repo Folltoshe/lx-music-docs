@@ -3,6 +3,7 @@ title: 桌面端
 icon: desktop
 ---
 
+<ClientOnly>
 <n-space vertical>
   <n-card title="技术栈" size="medium" hoverable>
     Electron 13 以及 Vue 3
@@ -49,3 +50,4 @@ icon: desktop
   </n-button>
 </a>
 </n-space>
+</ClientOnly>

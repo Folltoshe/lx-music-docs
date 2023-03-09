@@ -3,6 +3,7 @@ icon: mobile
 title: 移动端
 ---
 
+<ClientOnly>
 <n-space vertical>
   <n-card title="技术栈" size="medium" hoverable>
     React native 以及 Redux
@@ -49,3 +50,4 @@ title: 移动端
   </n-button>
 </a>
 </n-space>
+</ClientOnly>
