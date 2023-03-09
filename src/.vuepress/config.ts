@@ -15,7 +15,7 @@ export default defineUserConfig({
   bundler: viteBundler({
     viteOptions: {
       ssr: {
-        noExternal: ['naive-ui', 'vueuc'],
+        noExternal: ['naive-ui', 'vueuc', 'date-fns'],
       },
       plugins: [
         AutoImport({
