@@ -2,9 +2,6 @@
 @import './element/xnkl.scss';
 
 // 主页文字
-#app {
-  --sidebar-space: none;
-}
 
 .home.project .hero h1,
 .home.project .hero .description,
@@ -47,4 +44,22 @@ strong {
   padding-inline-start: 0 !important;
   -webkit-padding-end: 0 !important;
   padding-inline-end: 0 !important;
+}
+
+.sidebar {
+  -webkit-padding-start: 0 !important;
+  padding-inline-start: 0 !important;
+}
+
+.theme-container.sidebar-collapsed,
+.no-sidebar .footer-wrapper {
+  left: 0 !important;
+  width: 100% !important;
+}
+
+@media (max-width: 719px) {
+  .footer-wrapper {
+    left: 0 !important;
+    width: 100% !important;
+  }
 }

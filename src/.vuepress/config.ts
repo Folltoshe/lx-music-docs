@@ -116,11 +116,8 @@ export default defineUserConfig({
       editLink: '编辑此页',
     },
 
-    locales: {
-      '/': { navbar: Navbar, sidebar: Sidebar },
-      '/desktop/': { navbar: Navbar, sidebar: Sidebar },
-      '/mobile/': { navbar: Navbar, sidebar: Sidebar },
-    },
+    navbar: Navbar,
+    sidebar: Sidebar,
 
     plugins: {
       photoSwipe: undefined,
@@ -205,29 +202,16 @@ export default defineUserConfig({
     },
   }),
 
-  locales: {
-    '/': {
-      lang: 'zh-CN',
-      title: 'LX Music',
-      description: '落雪音乐助手文档',
-    },
-    '/desktop/': {
-      lang: 'zh-CN',
-      title: 'LX Music For Desktop',
-      // description: '落雪音乐助手桌面端文档',
-    },
-    '/mobile/': {
-      lang: 'zh-CN',
-      title: 'LX Music For Mobile',
-      // description: '落雪音乐助手移动端文档',
-    },
-  },
+  lang: 'zh-CN',
+  title: 'LX Music',
+  description: '落雪音乐助手文档',
   base: '/',
   shouldPrefetch: false,
   alias: {
     // 你可以在这里将别名定向到自己的组件
     // 比如这里我们将主题的主页组件改为用户 .vuepress/components 下的 HomePage.vue
-    '@theme-hope/components/HomePage': path.resolve(__dirname, './components/homePage.vue'),
+    '@theme-hope/components/HomePage': path.resolve(__dirname, './components/index.vue'),
     '@components/download': path.resolve(__dirname, './components/download.vue'),
+    // '@components/desktop': path.resolve(__dirname, './components/desktop'),
   },
 })
