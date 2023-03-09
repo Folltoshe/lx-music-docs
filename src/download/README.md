@@ -8,7 +8,7 @@ tag:
   - 软件下载
 ---
 
-<download></download>
+<download />
 
 <script setup>
   import download from '@components/download'
