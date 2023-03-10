@@ -4,17 +4,19 @@ icon: desktop
 ---
 
 <ClientOnly>
-  <n-space vertical>
-    <n-card title="技术栈" size="medium" hoverable>
-      Electron 13 以及 Vue 3
-    </n-card>
-    <n-card title="支持平台" size="medium" hoverable>
-      Windows，Mac OS 以及 Linux
-    </n-card>
-    <n-card title="特别说明" size="medium" hoverable>
-      不支持 Windows 7 以下的设备
-    </n-card>
-  </n-space>
+  <n-config-provider :theme="darkTheme">
+    <n-space vertical>
+      <n-card title="技术栈" size="medium" hoverable>
+        Electron 13 以及 Vue 3
+      </n-card>
+      <n-card title="支持平台" size="medium" hoverable>
+        Windows，Mac OS 以及 Linux
+      </n-card>
+      <n-card title="特别说明" size="medium" hoverable>
+        不支持 Windows 7 以下的设备
+      </n-card>
+    </n-space>
+  </n-config-provider>
 
   <n-space justify="center" style="padding-top: 25px">
     <a href="https://github.com/lyswhut/lx-music-desktop/releases"><img src="https://img.shields.io/github/release/lyswhut/lx-music-desktop" alt="Release version"></a>
