@@ -3,8 +3,6 @@ import { darkTheme } from 'naive-ui'
 
 export default defineClientConfig({
   enhance({ app, router, siteData }) {},
-  setup() {
-    return darkTheme
-  },
+  setup() {},
   rootComponents: [],
 })
