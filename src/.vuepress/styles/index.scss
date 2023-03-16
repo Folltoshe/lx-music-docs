@@ -27,7 +27,7 @@
 /** 字体 */
 @font-face {
   font-family: 'HYWenHei 85W';
-  src: url(http://cdn.jsdelivr.ren/npm/folltoshe-resources@1.0.0/fonts/genshin/index.ttf);
+  src: url(//cdn.jsdelivr.ren/npm/folltoshe-resources@1.0.0/fonts/genshin/index.ttf);
 }
 :root {
   --font-family-fancy: 'HYWenHei 85W', sans-serif;
@@ -109,10 +109,14 @@ strong {
 }
 
 .n-card {
-  --n-color: var(--bg-color) !important;
+  --n-color: var(--bg-color-secondary) !important;
   --n-text-color: var(--text-color) !important;
   --n-title-text-color: var(--text-color) !important;
   --n-border-color: rgba(0, 0, 0, 0) !important;
-  --n-box-shadow: 0 1px 2px -2px var(--theme-color-mask), 0 3px 6px 0 var(--theme-color-mask),
-    0 5px 12px 4px var(--theme-color-mask) !important;
+  --n-box-shadow: 0 2px 12px 0 var(--card-shadow) !important;
+  transition: background var(--color-transition), box-shadow var(--color-transition),
+    transform var(--transform-transition);
+}
+.n-card:hover {
+  transform: scale(1.03);
 }
