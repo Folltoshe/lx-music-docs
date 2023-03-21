@@ -1,20 +1,15 @@
 <template>
   <ClientOnly>
-    <n-spin :show="true">
-      <n-card content-style="padding: 0;">
-        <n-tabs type="line" size="large" :tabs-padding="10" pane-style="padding: 10px;width: auto;" animated>
-          <n-tab-pane name="windows" tab="Windows">
-            <n-data-table size="large" :columns="columns" :data="assetsData" :pagination="10" />
-          </n-tab-pane>
-          <n-tab-pane name="linux" tab="Linux"> Hey Jude </n-tab-pane>
-          <n-tab-pane name="macos" tab="Mac OS"> 七里香 </n-tab-pane>
-          <n-tab-pane name="android" tab="Android"> 七里香 </n-tab-pane>
-        </n-tabs>
-      </n-card>
-      <template #description>
-        在做了，做完可以直接在这个页面下载安装包
-      </template>
-    </n-spin>
+    <n-card content-style="padding: 0;">
+      <n-tabs type="line" size="large" :tabs-padding="10" pane-style="padding: 10px;width: auto;" animated>
+        <n-tab-pane name="windows" tab="Windows">
+          <n-data-table :columns="columns" :data="packageList" :pagination="false" :single-line="false" single-column />
+        </n-tab-pane>
+        <n-tab-pane name="linux" tab="Linux"> Hey Jude </n-tab-pane>
+        <n-tab-pane name="macos" tab="Mac OS"> 七里香 </n-tab-pane>
+        <n-tab-pane name="android" tab="Android"> 七里香 </n-tab-pane>
+      </n-tabs>
+    </n-card>
   </ClientOnly>
 </template>
 
@@ -26,8 +21,7 @@ import { NButton } from 'naive-ui'
 
 export default {
   setup() {
-    let assetsData = reactive([])
-    let loading = ref(true)
+    let packageList = reactive([])
 
     let showDownloadDialog = ref(false)
     let downloadDialogData = reactive([])
@@ -48,12 +42,17 @@ export default {
 
     const columns = [
       {
-        title: 'Name',
+        title: '名称',
         key: 'name',
       },
       {
-        title: 'Data',
+        title: '大小',
+        key: 'size',
+      },
+      {
+        title: '操作',
         key: 'data',
+        width: 45,
         render(row) {
           return h(
             NButton,
@@ -63,18 +62,19 @@ export default {
               size: 'large',
               onClick: () => console.log(row),
             },
-            { default: () => 'Send Email' }
+            { default: () => '下载' },
+            h('span', { class: 'font-icon icon iconfont icon-download' })
           )
         },
       },
     ]
 
-    assetsData.push({ name: 'testtwetywteytwyets', data: 'test' })
+    packageList.push({ name: 'testtwetywteytwyets', data: 'test', size: 666, key: 1 })
 
     return {
       useDownload,
       useDownloadDialog,
-      assetsData,
+      packageList,
       columns,
     }
   },
@@ -122,108 +122,8 @@ export default {
 </script>
 
 <style>
-.tab {
-  width: 100%;
-  background: var(--bg-color);
-  border: 1px solid var(--light-grey);
-}
-
-.el-tabs--border-card > .el-tabs__header {
-  background-color: var(--bg-color);
-  border-bottom: 1px solid var(--light-grey);
-}
-.el-tabs--border-card > .el-tabs__header .el-tabs__item.is-active {
-  background-color: var(--theme-color);
-  color: var(--white);
-  border: none;
-}
-
-@media screen and (max-width: 580px) {
-  .dialog {
-    width: 65% !important;
-  }
-}
-.dialog {
-  width: 26%;
-  max-height: 50%;
-  overflow: hidden;
-}
-.dialogButtonGroup {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-}
-.dialogButton {
-  width: 100%;
-  height: 40px;
-  font-size: 16px;
-  display: block;
-  margin-bottom: 35px;
-}
-.dialogButton:last-child {
-  margin-bottom: 0;
-}
-
-.fileInfo {
-  line-height: 2;
-  padding: 10px 10px 10px 10px;
-}
-.buttonGroup {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-}
-.buttonItem {
-  position: relative;
-}
-
 table {
+  display: revert;
   margin: 0;
-}
-.el-table {
-  --el-table-bg-color: var(--bg-color);
-  --el-table-border-color: var(--light-grey);
-  --el-table-text-color: var(--text-color);
-  --el-table-header-bg-color: var(--bg-color);
-  --el-table-tr-bg-color: var(--bg-color);
-  --el-table-expanded-cell-bg-color: var(--bg-color);
-  --el-table-row-hover-bg-color: var(--theme-color-mask);
-}
-
-.el-table tr {
-  background-color: var(--el-table-tr-bg-color) !important;
-}
-.el-table tr:hover {
-  background-color: var(--theme-color-mask) !important;
-}
-th.el-table_1_column_3.is-leaf.el-table__cell {
-  text-align: center;
-}
-
-.el-button + .el-button {
-  margin-left: 0;
-}
-.el-button--primary {
-  --el-button-bg-color: var(--theme-color);
-  --el-button-border-color: var(--theme-color);
-  color: var(--white);
-}
-.el-button.is-text {
-  color: var(--text-color);
-}
-.el-button.is-text:not(.is-disabled):focus,
-.el-button.is-text:not(.is-disabled):hover {
-  color: var(--white);
-  background-color: var(--theme-color);
-}
-
-.el-dialog__title {
-  color: var(--text-color);
-}
-.el-dialog {
-  --el-dialog-bg-color: var(--bg-color);
 }
 </style>

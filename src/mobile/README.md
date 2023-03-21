@@ -5,13 +5,13 @@ title: 移动端
 
 <ClientOnly>
   <n-space vertical>
-    <n-card title="技术栈" size="medium" hoverable>
+    <n-card home title="技术栈" size="medium" hoverable>
       React native 以及 Redux
     </n-card>
-    <n-card title="支持平台" size="medium" hoverable>
+    <n-card home title="支持平台" size="medium" hoverable>
       Android(安卓版本 >= 6)
     </n-card>
-    <n-card title="特别说明" size="medium" hoverable>
+    <n-card home title="特别说明" size="medium" hoverable>
       不计划支持 IOS(苹果手机系统) 以及 Android 版本为6以下的设备
     </n-card>
   </n-space>

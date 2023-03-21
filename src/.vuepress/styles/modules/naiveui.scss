@@ -1,0 +1,12 @@
+.n-card[home] {
+  --n-color: var(--bg-color-secondary) !important;
+  --n-text-color: var(--text-color) !important;
+  --n-title-text-color: var(--text-color) !important;
+  --n-border-color: rgba(0, 0, 0, 0) !important;
+  --n-box-shadow: 0 2px 12px 0 var(--card-shadow) !important;
+  transition: background var(--color-transition), box-shadow var(--color-transition),
+    transform var(--transform-transition);
+}
+.n-card[home]:hover {
+  transform: scale(1.03);
+}

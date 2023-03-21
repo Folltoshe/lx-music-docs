@@ -5,13 +5,13 @@ icon: desktop
 
 <ClientOnly>
   <n-space vertical>
-    <n-card title="技术栈" size="medium" hoverable>
+    <n-card home title="技术栈" size="medium" hoverable>
       Electron 13 以及 Vue 3
     </n-card>
-    <n-card title="支持平台" size="medium" hoverable>
+    <n-card home title="支持平台" size="medium" hoverable>
       Windows，Mac OS 以及 Linux
     </n-card>
-    <n-card title="特别说明" size="medium" hoverable>
+    <n-card home title="特别说明" size="medium" hoverable>
       不支持 Windows 7 以下的设备
     </n-card>
   </n-space>
