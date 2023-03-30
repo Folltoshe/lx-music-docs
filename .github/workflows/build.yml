@@ -1,4 +1,4 @@
-name: Build Docs
+name: Build And Deploy Docs
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build:
+  Build And Deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

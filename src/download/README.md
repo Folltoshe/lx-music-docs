@@ -1,7 +1,6 @@
 ---
 title: 软件下载
 icon: 'download'
-sidebar: false
 category:
   - 下载
 tag:
