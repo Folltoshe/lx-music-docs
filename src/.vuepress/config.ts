@@ -208,9 +208,8 @@ export default defineUserConfig({
   base: '/',
   shouldPrefetch: false,
   alias: {
-    // 你可以在这里将别名定向到自己的组件
-    // 比如这里我们将主题的主页组件改为用户 .vuepress/components 下的 HomePage.vue
-    '@theme-hope/components/HomePage': path.resolve(__dirname, './components/home.vue'),
-    '@components/download': path.resolve(__dirname, './components/download.vue'),
+    '@theme-hope/components/HomePage': path.resolve(__dirname, './view/index/home.vue'),
+    '@components': path.resolve(__dirname, './components/'),
+    '@view': path.resolve(__dirname, './view/'),
   },
 })

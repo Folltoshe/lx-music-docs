@@ -8,11 +8,13 @@ tag:
   - 软件下载
 ---
 
-<download />
+<!-- <n-message-provider>
+  <downloadList />
+</n-message-provider> -->
 
-<script setup>
-  import download from '@components/download'
-</script>
+<!-- <script setup>
+  import downloadList from '@view/download/list.vue'
+</script> -->
 
 :::danger
 若网盘链接无法打开:
@@ -28,6 +30,10 @@ tag:
 [网盘链接](https://www.lanzoui.com/b0bf2cfa/)
 
 密码：`glqw`
+
+[PC 端 Github 链接](https://github.com/lyswhut/lx-music-desktop/release)
+
+[移动 端 Github 链接](https://github.com/lyswhut/lx-music-mobile/release)
 
 ## 安装包说明
 
