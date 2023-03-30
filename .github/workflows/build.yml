@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  Build And Deploy:
+  docs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
