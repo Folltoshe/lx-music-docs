@@ -1,9 +1,9 @@
 name: Deploy Docs
 
 on:
-  push:
-    branches:
-      - dist
+  workflow_run:
+    workflows: [Build]
+    types: [completed]
 
 jobs:
   deploy:

@@ -35,3 +35,6 @@ jobs:
         with:
           branch: dist
           folder: src/.vuepress/dist
+
+      - name: Deploy Docs To Server
+        run: curl ${{ secrets.SERVER_UPDATE_URL }}
