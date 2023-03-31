@@ -30,9 +30,9 @@ tag:
 
 密码：`glqw`
 
-[PC 端 Github 链接](https://github.com/lyswhut/lx-music-desktop/release)
+[PC 端 Github 链接](https://github.com/lyswhut/lx-music-desktop/releases)
 
-[移动 端 Github 链接](https://github.com/lyswhut/lx-music-mobile/release)
+[移动 端 Github 链接](https://github.com/lyswhut/lx-music-mobile/releases)
 
 ## 安装包说明
 
