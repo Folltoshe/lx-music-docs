@@ -1,8 +1,9 @@
 import { defineUserConfig } from 'vuepress'
 import { docsearchPlugin } from '@vuepress/plugin-docsearch'
+import { createPage } from '@vuepress/core'
+import axios from 'axios'
 import { hopeTheme } from 'vuepress-theme-hope'
-import { Navbar } from './navbar/index'
-import { Sidebar } from './sidebar/index'
+import { Navbar, Sidebar } from './layout'
 import { getDirname, path } from '@vuepress/utils'
 import { viteBundler } from 'vuepress-vite'
 import AutoImport from 'unplugin-auto-import/vite'
@@ -12,6 +13,24 @@ import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 const __dirname = getDirname(import.meta.url)
 
 export default defineUserConfig({
+  // TODO
+  // async onInitialized(app) {
+  //   let desktop = await axios.get(
+  //     'https://ghproxy.com/https://raw.githubusercontent.com/lyswhut/lx-music-desktop/master/publish/changeLog.md'
+  //   )
+  //   console.log(222)
+  //   if (!desktop.data) console.log(1111)
+  //   let page = await createPage(app, {
+  //     path: '/desktop/changeLogs.html',
+  //     frontmatter: {
+  //       layout: 'Layout',
+  //       title: '更新日志',
+  //     },
+  //     content: desktop.data,
+  //   })
+  //   app.pages.push(page)
+  // },
+  // 编译器配置
   bundler: viteBundler({
     viteOptions: {
       ssr: {
@@ -31,6 +50,7 @@ export default defineUserConfig({
       ],
     },
   }),
+  // 插件配置
   plugins: [
     docsearchPlugin({
       appId: 'FOHP6RFAIX',
@@ -76,12 +96,11 @@ export default defineUserConfig({
       },
     }),
   ],
-
+  // 主题配置
   theme: hopeTheme({
     fullscreen: true,
     toc: true,
     navbarAutoHide: 'none',
-
     navbarLayout: {
       start: ['Brand'],
       center: [],
