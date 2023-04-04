@@ -109,7 +109,7 @@ export default defineUserConfig({
     docsDir: 'src',
 
     pageInfo: ['Author', 'Original', 'Date', 'Category', 'Tag', 'ReadingTime'],
-    footer: "<p><a href='https://beian.miit.gov.cn/' target='_blank' >闽ICP备2022010952号</a></p>",
+    footer: "<p><a href='https://beian.miit.gov.cn/' target='_blank' >闽ICP备2022010952号</a></p><a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target='_blank'>本网站由又拍云提供CDN服务</a>",
     displayFooter: true,
 
     metaLocales: {
