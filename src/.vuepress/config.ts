@@ -227,8 +227,8 @@ export default defineUserConfig({
   base: '/',
   shouldPrefetch: false,
   alias: {
-    '@theme-hope/components/HomePage': path.resolve(__dirname, './view/index/home.vue'),
-    '@components': path.resolve(__dirname, './components/'),
-    '@view': path.resolve(__dirname, './view/'),
+    '@theme-hope/components/HomePage': path.resolve(__dirname, './pages/home/index.vue'),
+    // '@components': path.resolve(__dirname, './components/'),
+    '@page': path.resolve(__dirname, './pages/'),
   },
 })

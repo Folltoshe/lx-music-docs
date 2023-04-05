@@ -1,7 +1,9 @@
 <template>
   <!-- 一言 -->
-  <p id="say" class="say">一言加载中...</p>
-  <p id="say-creator" class="say-creator">作者加载中...</p>
+  <div class="say">
+    <p id="say-content" class="content">一言加载中...</p>
+    <p id="say-author" class="author">一言作者加载中...</p>
+  </div>
   <!-- <div class="home-head">
     这应该是LX Music Docs今年的最后一个版本，提前祝大家新春快乐，事事顺心~
     <br />
@@ -79,15 +81,15 @@ export default {
   components: { HopeHomePage },
   mounted() {
     const url = 'https://v1.hitokoto.cn/'
-    const request = axios.get(url)
 
-    request.then(e => {
-      if (e.status != 200) {
-        document.getElementById('say').innerHTML = '一言加载失败'
-        document.getElementById('say-creator').innerHTML = `作者加载失败`
+    axios.get(url).then(e => {
+      if (e.status != 200 && !e.data) {
+        document.getElementById('say-content').innerHTML = '一言加载失败'
+        document.getElementById('say-author').innerHTML = `一言作者加载失败`
+        return
       }
-      document.getElementById('say').innerHTML = `${e.data.hitokoto}`
-      document.getElementById('say-creator').innerHTML = `--  ${e.data.creator}`
+      document.getElementById('say-content').innerHTML = `${e.data.hitokoto}`
+      document.getElementById('say-author').innerHTML = `--  ${e.data.creator}`
     })
   },
 }
@@ -95,16 +97,19 @@ export default {
 
 <style>
 .say {
-  padding-top: calc(var(--navbar-height) + 10px);
+  padding-top: var(--navbar-height);
   text-align: center;
   width: 100%;
-  font-size: 20px;
+  margin-block-start: 5px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
-.say-creator {
-  /* padding-top: 2px; */
-  text-align: center;
-  width: 100%;
-  font-size: 17px;
+.say.content {
+  font-size: 22px;
+}
+.say.author {
+  font-size: 20px;
 }
 
 @media screen and (max-width: 580px) {

@@ -16,9 +16,14 @@ tag:
 </script> -->
 
 :::danger
+
 若网盘链接无法打开:
-请尝试将 lanzoui 改为 lanzoux/lanzouj/lanzoue 任意一个查看能否打开 或 \[
-[百度](https://www.baidu.com/s?wd=蓝奏云链接打不开) or [必应](https://cn.bing.com/search?q=蓝奏云链接打不开) \]
+
+- 请尝试将 lanzoui 改为 lanzoux/lanzouj/lanzoue 任意一个查看能否打开
+
+- 或者[ [百度](https://ffis.me/baidu/index.html?蓝奏云链接打不开) or [必应](https://kaibinyang.com/bang/?蓝奏云链接打不开) or [Google](https://moedog.org/tools/google/?q=6JOd5aWP5LqR6ZO+5o6l5omT5LiN5byA) ]
+
+---
 
 推荐使用网盘下载!!!!!如果网盘里面没有你想要的版本可以前往 **Github 发布页**下载!!!!!
 
