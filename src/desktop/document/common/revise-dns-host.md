@@ -36,6 +36,21 @@ DNS 修改方法(7~8 为可选操作):
 
 HOST 修改方法:
 
+一键脚本:
+
+```bat
+PUSHD %~DP0 & cd /d "%~dp0"
+%1 %2
+mshta vbscript:createobject("shell.application").shellexecute("%~s0","goto :runas","","runas",1)(window.close)&goto :eof
+:runas
+
+echo 97.64.37.235  tm.tempmusics.tk >> %systemroot%\system32\drivers\etc\hosts
+echo 97.64.37.235  ts.tempmusics.tk >> %systemroot%\system32\drivers\etc\hosts
+
+echo done
+```
+将脚本复制到一个新的txt文档中，将其另存为一个.bat文件，然后运行这个.bat文件。最后重启软件再尝试！
+
 1. 打开`C:\WINDOWS\system32\drivers\etc`;
 
 2. 用记事本打开里面的`hosts`文件（无后缀）;
