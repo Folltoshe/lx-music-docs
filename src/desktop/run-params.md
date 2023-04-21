@@ -2,11 +2,6 @@
 title: 支持的启动参数
 icon: 'start'
 author: 落雪無痕
-category:
-  - 软件
-  - 桌面端
-tag:
-  - 启动参数
 ---
 
 目前软件已支持的启动参数如下：

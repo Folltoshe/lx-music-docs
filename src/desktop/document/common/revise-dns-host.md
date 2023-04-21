@@ -1,11 +1,5 @@
 ---
 title: 修改DNS和HOST
-category:
-  - 常见问题
-  - 桌面端
-tag:
-  - DNS
-  - HOST
 ---
 
 :::info
@@ -16,7 +10,7 @@ tag:
 
 ## Windows
 
-DNS 修改方法(7~8 为可选操作):
+### DNS(7~8 为可选操作)
 
 1. <kbd>windows</kbd>+<kbd>e</kbd>打开资源管理器，在上方导航栏中输入控制面板然后回车（能打开控制面板就行）;
 
@@ -34,7 +28,7 @@ DNS 修改方法(7~8 为可选操作):
 
 8. 输入`ipconfig /flushdns`回车运行。
 
-HOST 修改方法:
+### HOST
 
 :::tip
 
@@ -71,11 +65,11 @@ echo done
 
 没有MacOS电脑，欢迎PR
 
-DNS 修改方法:
+### DNS
 
 1. 不知道
 
-HOST 修改方法:
+### HOST
 
 1. 打开系统偏好设置，选择Hosts
 

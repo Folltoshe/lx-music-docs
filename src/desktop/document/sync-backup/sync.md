@@ -1,10 +1,5 @@
 ---
 title: 同步功能
-category:
-  - 常见问题
-  - 桌面端
-tag:
-  - 同步
 ---
 
 :::danger

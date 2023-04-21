@@ -1,10 +1,5 @@
 ---
 title: 调整列表顺序
-category:
-  - 常见问题
-  - 桌面端
-tag:
-  - 列表
 ---
 
 :::danger

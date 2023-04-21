@@ -1,11 +1,6 @@
 ---
 title: 数据存储路径
 icon: 'storage'
-category:
-  - 常见问题
-  - 移动端
-tag:
-  - 数据存储
 ---
 
 软件的数据存储在：`/data/user/{uid}/cn.toside.music.mobile/cache`

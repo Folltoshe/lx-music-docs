@@ -1,11 +1,5 @@
 ---
 title: Linux下界面异常
-category:
-  - 常见问题
-  - 桌面端
-tag:
-  - 界面异常
-  - Linux
 ---
 
 ### Linux 下界面异常

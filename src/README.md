@@ -21,30 +21,32 @@ actions:
     icon: download
 
 features:
-  - title: 开源 🌹💕
+  - title: 开源
     icon: open
     details: 本项目开源发布于 GitHub 面向全世界人用作对技术的学习交流使用
 
-  - title: 免费且无广告 🤔😉
+  - title: 免费且无广告
     icon: free
     details: 本项目开发的初衷仅是为了对新技术的学习与研究，因此软件直至停止维护都将会一直保持纯净
 
-  - title: 多端支持 👍👀
+  - title: 多端支持
     icon: platform
-    details: 本项目支持在Windows、Mac OS、Linux、Android平台上运行。不计划支持IOS
+    details: 本项目支持在Windows、Mac OS、Linux、Android平台上运行。
+
+  - title: 说明
+    icon: info
+    details: 本项目不计划支持IOS。当前版本比128k更高的音质已失效！
 ---
 
 :::danger
 
+请不要在公共场合大肆宣传LX Music！
+
+---
+
 提问前请先查看 [如何提问](#如何提问)
 
 反馈请查看 [如何反馈](#如何反馈)
-
----
-
-无损已经没有了！！！！
-
----
 
 LX Music 一直为 **开源免费** 软件，如果你是从某些地方买的话，你就是被骗了
 

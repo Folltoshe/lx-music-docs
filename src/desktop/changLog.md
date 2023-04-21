@@ -2,9 +2,6 @@
 title: 更新日志
 author: 落雪無痕
 icon: update
-category:
-  - 常见问题
-  - 桌面端
 ---
 
 ### 不兼容性变更说明

@@ -1,17 +1,12 @@
 ---
 title: 编写自定义源
 author: 落雪無痕
-category:
-  - 软件
-  - 桌面端
-tag:
-  - 自定义源
 ---
 
 文件请使用 UTF-8 编码格式编写，脚本所用编程语言为 JavaScript，可以使用 ES6+语法，脚本与应用的交互是使用类似事件收发的方
 式进行，这是一个基本的脚本例子：
 
-```js
+```javascript
 /**
  * @name 测试音乐源
  * @description 我只是一个测试音乐源哦
@@ -132,7 +127,7 @@ send(EVENT_NAMES.inited, {
 
 事件注册方法，应用主动与脚本通信时使用：
 
-```js
+```javascript
 /**
  * @param event_name 事件名
  * @param handler 事件处理回调 -- 注意：注册的回调必须返回 Promise 对象
@@ -147,7 +142,7 @@ window.lx.on(event_name, handler)
 
 事件发送方法，脚本主动与应用通信时使用：
 
-```js
+```javascript
 /**
  * @param event_name 事件名
  * @param datas 要传给应用的数据
@@ -175,11 +170,17 @@ const cancelHttp = window.lx.request(url, options, callback)
 
 应用提供给脚本的工具方法：
 
+:::details `window.lx.utils.buffer`
+
 - `window.lx.utils.buffer.from`：对应 Node.js 的 `Buffer.from`
 
 - `window.lx.utils.buffer.bufToString`：Buffer 转字符串 `bufToString(buffer, format)`，`format`对应 Node.js
 
   - `Buffer.toString`的参数（v1.14.0 之后新增）
+
+:::
+
+:::details `window.lx.utils.crypto`
 
 - `window.lx.utils.crypto.aesEncrypt`：AES 加密 `aesEncrypt(buffer, mode, key, iv)`
 
@@ -188,5 +189,18 @@ const cancelHttp = window.lx.request(url, options, callback)
 - `window.lx.utils.crypto.randomBytes`：生成随机字符串 `randomBytes(size)`
 
 - `window.lx.utils.crypto.rsaEncrypt`：RSA 加密 `rsaEncrypt(buffer, key)`
+
+- `window.lx.utils.crypto.rsaEncrypt`：RSA 加密 `rsaEncrypt(buffer, key)`
+
+:::
+
+:::details `window.lx.utils.zlib`
+
+- `window.lx.utils.zlib.inflate`: zlib 解密
+
+- `window.lx.utils.zlib.deflate`：zlib 加密
+
+:::
+
 
 目前仅提供以上工具方法，如果需要其他方法可以开 issue 讨论。

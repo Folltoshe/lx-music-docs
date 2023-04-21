@@ -15,14 +15,3 @@ title: 常见问题
 - 移动端视图请点击左上角来切换条目,右上角切换分类
 
 :::
-
-<!--
-## 如何使用此文档
-
-### 电脑端
-
-![desktop](https://tvax2.sinaimg.cn/large/007SWtfrly1h9jegdcgmkj30y10i178p.jpg)
-
-### 移动端
-
-![mobile](https://shp.qpic.cn/collector/2964359326/10fff8c0-5d0a-4839-bd9c-0b379eb72d9b/640?mType=Other) -->

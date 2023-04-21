@@ -2,11 +2,6 @@
 title: Scheme URL支持
 icon: 'url'
 author: 落雪無痕
-category:
-  - 常见问题
-  - 桌面端
-tag:
-  - Scheme URL
 ---
 
 从 v1.17.0 起支持 Scheme URL，可以使用此功能从浏览器等场景下调用 LX Music，我们开发了一
