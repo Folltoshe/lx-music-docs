@@ -1,7 +1,7 @@
 import { defineUserConfig } from 'vuepress'
 import { docsearchPlugin } from '@vuepress/plugin-docsearch'
-import { createPage } from '@vuepress/core'
-import axios from 'axios'
+// import { createPage } from '@vuepress/core'
+// import axios from 'axios'
 import { hopeTheme } from 'vuepress-theme-hope'
 import { Navbar, Sidebar } from './layout'
 import { getDirname, path } from '@vuepress/utils'
@@ -229,7 +229,6 @@ export default defineUserConfig({
   shouldPrefetch: false,
   alias: {
     '@theme-hope/components/HomePage': path.resolve(__dirname, './pages/home/index.vue'),
-    // '@components': path.resolve(__dirname, './components/'),
     '@page': path.resolve(__dirname, './pages/'),
   },
 })

@@ -43,3 +43,7 @@
   --font-family-code: 'JetBrainsMono', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', 'HYWenHei85W', sans-serif;
   --font-family-mono: var(--font-family-code);
 }
+
+* {
+  font-family: var(--font-family);
+}
