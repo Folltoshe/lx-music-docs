@@ -3,19 +3,9 @@ title: 桌面端
 icon: desktop
 ---
 
-<ClientOnly>
-  <n-space vertical>
-    <n-card home title="技术栈" size="medium">
-      Electron 13 以及 Vue 3
-    </n-card>
-    <n-card home title="支持平台" size="medium">
-      Windows，Mac OS 以及 Linux
-    </n-card>
-    <n-card home title="特别说明" size="medium">
-      不支持 Windows 7 以下的设备
-    </n-card>
-  </n-space>
+![about](https://socialify.git.ci/lyswhut/lx-music-desktop/image?description=1&font=Jost&forks=1&issues=1&language=1&name=1&owner=1&pattern=Plus&pulls=1&stargazers=1&theme=Auto)
 
+<ClientOnly>
   <n-space justify="center" size="large" style="padding-top: 30px">
     <router-link to="/desktop/document/">
       <n-button tertiary round type="primary" size="large">
@@ -43,11 +33,22 @@ icon: desktop
     </a>
   </n-space>
 
-  <n-space justify="center" style="padding-top: 25px">
-    <a href="https://github.com/lyswhut/lx-music-desktop/releases"><img src="https://img.shields.io/github/release/lyswhut/lx-music-desktop" alt="Release version"></a>
-    <a href="https://github.com/lyswhut/lx-music-desktop/actions/workflows/release.yml"><img src="https://github.com/lyswhut/lx-music-desktop/workflows/Build/badge.svg" alt="Build status"></a>
-    <a href="https://github.com/lyswhut/lx-music-desktop/actions/workflows/beta-pack.yml"><img src="https://github.com/lyswhut/lx-music-desktop/workflows/Build%20Beta/badge.svg" alt="Build status"></a>
-    <a href="https://electronjs.org/releases/stable"><img src="https://img.shields.io/github/package-json/dependency-version/lyswhut/lx-music-desktop/dev/electron/master" alt="Electron version"></a>
-    <a href="https://github.com/lyswhut/lx-music-desktop/tree/dev"><img src="https://img.shields.io/github/package-json/v/lyswhut/lx-music-desktop/dev" alt="Dev branch version"></a>
+  <n-space vertical>
+    <n-card home title="技术栈" size="medium">
+      Electron 13 以及 Vue 3
+    </n-card>
+    <n-card home title="支持平台" size="medium">
+      Windows，Mac OS 以及 Linux
+    </n-card>
+    <n-card home title="特别说明" size="medium">
+      不支持 Windows 7 以下的设备
+    </n-card>
   </n-space>
 </ClientOnly>
+<!-- <n-space justify="center" style="padding-top: 25px">
+  <a href="https://github.com/lyswhut/lx-music-desktop/releases"><img src="https://img.shields.io/github/release/lyswhut/lx-music-desktop" alt="Release version"></a>
+  <a href="https://github.com/lyswhut/lx-music-desktop/actions/workflows/release.yml"><img src="https://github.com/lyswhut/lx-music-desktop/workflows/Build/badge.svg" alt="Build status"></a>
+  <a href="https://github.com/lyswhut/lx-music-desktop/actions/workflows/beta-pack.yml"><img src="https://github.com/lyswhut/lx-music-desktop/workflows/Build%20Beta/badge.svg" alt="Build status"></a>
+  <a href="https://electronjs.org/releases/stable"><img src="https://img.shields.io/github/package-json/dependency-version/lyswhut/lx-music-desktop/dev/electron/master" alt="Electron version"></a>
+  <a href="https://github.com/lyswhut/lx-music-desktop/tree/dev"><img src="https://img.shields.io/github/package-json/v/lyswhut/lx-music-desktop/dev" alt="Dev branch version"></a>
+</n-space> -->

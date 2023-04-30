@@ -2,17 +2,18 @@ import { sidebar } from 'vuepress-theme-hope'
 
 export const Sidebar = sidebar({
   '/desktop/': [
-  { text: '常见问题', icon: 'question', link: '/desktop/document/' },
-  { text: '主页', icon: 'home', link: '/' },
-  { text: '仓库', icon: 'github', link: 'https://github.com/lyswhut/lx-music-desktop' },
-  'changLog.md',
-  'hotkey.md',
-  'scheme-url.md',
-  'run-params.md',
-  'license.md',
-  'use-source.md'
+    { text: '常见问题', icon: 'question', link: '/desktop/document/' },
+    { text: '主页', icon: 'home', link: '/' },
+    { text: '仓库', icon: 'github', link: 'https://github.com/lyswhut/lx-music-desktop' },
+    'changLog.md',
+    'hotkey.md',
+    'scheme-url.md',
+    'run-params.md',
+    'license.md',
+    'use-source.md',
   ],
   '/desktop/document/': [
+    { text: '返回', icon: 'question', link: '/desktop/' },
     { text: '通用', icon: 'common', prefix: 'common/', children: 'structure', collapsible: true },
     { text: '下载', icon: 'download', prefix: 'download/', children: 'structure', collapsible: true },
     { text: '播放', icon: 'play', prefix: 'play/', children: 'structure', collapsible: true },
@@ -27,15 +28,16 @@ export const Sidebar = sidebar({
     'data-path',
   ],
   '/mobile/': [
-  { text: '常见问题', icon: 'question', link: '/mobile/document/' },
-  { text: '主页', icon: 'home', link: '/' },
-  { text: '仓库', icon: 'github', link: 'https://github.com/lyswhut/lx-music-mobile' },
-  'update.md',
-  'statusbar-lyric.md',
-  'license.md',
-  'use-source.md'
+    { text: '常见问题', icon: 'question', link: '/mobile/document/' },
+    { text: '主页', icon: 'home', link: '/' },
+    { text: '仓库', icon: 'github', link: 'https://github.com/lyswhut/lx-music-mobile' },
+    'update.md',
+    'statusbar-lyric.md',
+    'license.md',
+    'use-source.md',
   ],
   '/mobile/document/': [
+    { text: '返回', icon: 'question', link: '/mobile/' },
     { text: '通用', icon: 'common', prefix: 'common/', children: 'structure', collapsible: true },
     { text: '下载', icon: 'download', prefix: 'download/', children: 'structure', collapsible: true },
     { text: '播放', icon: 'play', prefix: 'play/', children: 'structure', collapsible: true },

@@ -1,5 +1,4 @@
-@import './modules/vuepress.scss';
-@import './modules/naiveui.scss';
+@import './modules/index.scss';
 
 /** 滚动条 */
 ::-webkit-scrollbar {
@@ -27,16 +26,20 @@
   background: #c0c0c0;
 }
 
-/** 字体 */
 @font-face {
-  font-family: 'HYWenHei 85W';
-  src: url(https://cdn.jsdelivr.ren/npm/folltoshe_file/fonts/HYWenHei%2085W/compress/dist.woff);
+  font-family: 'HYWenHei85W';
+  src: url(https://cdn.jsdelivr.ren/npm/folltoshe_file/fonts/HYWenHei85W/dist/index.woff);
 }
+@font-face {
+  font-family: 'JetBrainsMono';
+  src: url(https://cdn.jsdelivr.ren/npm/folltoshe_file/fonts/JetBrainsMono/dist/light.woff);
+}
+
 :root {
-  --font-family-fancy: 'HYWenHei 85W', sans-serif;
-  --font-family: 'HYWenHei 85W', sans-serif;
-  --font-family-code: 'HYWenHei 85W', sans-serif;
-}
-* {
-  font-family: 'HYWenHei 85W', sans-serif;
+  --font-family: 'HYWenHei85W', sans-serif;
+  --font-family-fancy: var(--font-family);
+  --font-family-heading: var(--font-family);
+  --font-family-heading: var(--font-family);
+  --font-family-code: 'JetBrainsMono', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', 'HYWenHei85W', sans-serif;
+  --font-family-mono: var(--font-family-code);
 }
