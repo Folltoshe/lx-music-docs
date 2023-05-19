@@ -25,25 +25,3 @@
   /*边角（位置6）*/
   background: #c0c0c0;
 }
-
-@font-face {
-  font-family: 'HYWenHei85W';
-  src: url(https://cdn.jsdelivr.ren/npm/folltoshe_file/fonts/HYWenHei85W/dist/index.woff);
-}
-@font-face {
-  font-family: 'JetBrainsMono';
-  src: url(https://cdn.jsdelivr.ren/npm/folltoshe_file/fonts/JetBrainsMono/dist/light.woff);
-}
-
-:root {
-  --font-family: 'HYWenHei85W', sans-serif;
-  --font-family-fancy: var(--font-family);
-  --font-family-heading: var(--font-family);
-  --font-family-heading: var(--font-family);
-  --font-family-code: 'JetBrainsMono', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', 'HYWenHei85W', sans-serif;
-  --font-family-mono: var(--font-family-code);
-}
-
-* {
-  font-family: var(--font-family);
-}

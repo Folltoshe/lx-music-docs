@@ -40,7 +40,7 @@ features:
 
 :::danger
 
-请不要在公共场合大肆宣传LX Music！
+请不要在公共场合大肆宣传 LX Music！
 
 ---
 
@@ -53,22 +53,6 @@ LX Music 一直为 **开源免费** 软件，如果你是从某些地方买的�
 当然，如果你非要卖这个软件，请查看 [怎么在某些地方贩卖 LX Music](https://www.baidu.com/s?wd=%E5%8F%91%E7%8E%B0%E8%87%AA%E5%B7%B1%E6%98%AF%E4%B8%AA%E5%82%BB%E9%80%BC%E6%80%8E%E4%B9%88%E5%8A%9E)
 
 :::
-
-## 无标题
-
-如果文档中没有你找到的问题，你可以去看 [官方文档](https://lxmusic.toside.cn)
-
-学业原因，这个文档可能不会及时更新,其实是想摆烂(不是
-
-By [Folltoshe](https://github.com/Folltoshe) in 2022
-
----
-
-我和 Folltoshe 因为学业原因，以后文档更新将不会那么频繁。
-
-请多一点理解，毕竟大家也应该不希望这么好的一个软件消失掉吧。
-
-By [@helloplhm-qwq](https://github.com/helloplhm-qwq)
 
 ## 如何反馈
 
@@ -226,9 +210,7 @@ GitHub 反馈前请先**搜索是否已存在相关的 issue** , 不要重复提
 
 > Bad: 什么是 JavaScript？
 
-这种问题也是，很明显通过搜索引擎就能搞定的，要是下次还有这种问题，你就把这个图发给它。
-
-![img](http://wx3.sinaimg.cn/large/006ARE9vgy1fwntelg0mlj30b40b4gm1.jpg)
+这种问题也是，很明显通过搜索引擎就能搞定的，要是下次还有这种问题，你就让他百度。
 
 #### 建议的问法：
 

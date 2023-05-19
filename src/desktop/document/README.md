@@ -16,12 +16,12 @@ title: 常见问题
 
 :::
 
-如果你无法播放请看 [无法播放](./play/cannot-play.md)
+无法播放 [无法播放](./play/cannot-play.md)
 
-如果你无法下载请看 [无法下载](./download/cannot-download.md)
+无法下载 [无法下载](./download/cannot-download.md)
 
-如果你无法同步请看 [无法同步](./sync-backup/sync.md)
+无法同步 [无法同步](./sync-backup/sync.md)
 
-如果你安装失败请看 [安装失败](./install/install-failed.md)
+安装失败 [安装失败](./install/install-failed.md)
 
-如果要导入歌单请看 [导入歌单](./songlist/open.md)
+导入歌单 [导入歌单](./songlist/open.md)

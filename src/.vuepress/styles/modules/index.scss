@@ -1,2 +1,11 @@
 @import './vuepress.scss';
 @import './naiveui.scss';
+@import './fonts.scss';
+
+:root {
+  --font-family: 'HanYi QiHei 65J', sans-serif;
+  --font-family-code: 'JetBrainsMono Light', 'Consolas', 'Monaco', 'Andale Mono', 'Ubuntu Mono', var(--font-family);
+  --font-family-fancy: var(--font-family);
+  --font-family-heading: var(--font-family);
+  --font-family-mono: var(--font-family-code);
+}

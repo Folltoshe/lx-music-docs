@@ -1,12 +1,11 @@
 ---
 title: 编写自定义源
-author: 落雪無痕
 ---
 
 文件请使用 UTF-8 编码格式编写，脚本所用编程语言为 JavaScript，可以使用 ES6+语法，脚本与应用的交互是使用类似事件收发的方
 式进行，这是一个基本的脚本例子：
 
-```javascript
+```js
 /**
  * @name 测试音乐源
  * @description 我只是一个测试音乐源哦
@@ -15,69 +14,139 @@ author: 落雪無痕
  * @homepage http://xxx
  */
 
-const { EVENT_NAMES, request, on, send } = window.lx
+const { EVENT_NAMES, on, send, request, utils: lxUtils, version } = window.lx
 
-const qualitys = {
-  kw: {
-    '128k': '128',
-    '320k': '320',
-    flac: 'flac',
-  },
-}
-
-const httpRequest = (url, options) =>
-  new Promise((resolve, reject) => {
+// http请求
+const httpFetch = (url, options) => {
+  return new Promise((resolve, reject) => {
     request(url, options, (err, resp) => {
       if (err) return reject(err)
       resolve(resp.body)
     })
   })
-
-const apis = {
-  kw: {
-    musicUrl({ songmid }, quality) {
-      return httpRequest('http://xxx').then(data => {
-        return data.url
-      })
-    },
+}
+// 工具
+const utils = {
+  buffer: {
+    from: lxUtils.buffer.from,
+    bufToString: lxUtils.buffer.bufToString,
+  },
+  crypto: {
+    aesEncrypt: lxUtils.crypto.aesEncrypt,
+    md5: lxUtils.crypto.md5,
+    randomBytes: lxUtils.crypto.randomBytes,
+    rsaEncrypt: lxUtils.crypto.rsaEncrypt,
+  },
+  zlib: {
+    deflate: lxUtils.zlib.deflate,
+    inflate: lxUtils.zlib.inflate,
   },
 }
 
-// 注册应用API请求事件
-// source 音乐源，可能的值取决于初始化时传入的sources对象的源key值
-// info 请求附加信息，内容根据action变化
-// action 请求操作类型，目前只有musicUrl，即获取音乐URL链接，
-//    当action为musicUrl时info的结构：{type, musicInfo}，
-//        info.type：音乐质量，可能的值有128k / 320k / flac（取决于初始化时对应源传入的qualitys值中的一个），
-//        info.musicInfo：音乐信息对象，里面有音乐ID、名字等信息
-
-on(EVENT_NAMES.request, ({ source, action, info }) => {
-  // 回调必须返回 Promise 对象
-  switch (action) {
-    // action 为 musicUrl 时需要在 Promise 返回歌曲 url
-    case 'musicUrl':
-      return apis[source].musicUrl(info.musicInfo, qualitys[source][info.type]).catch(err => {
-        console.log(err)
-        return Promise.reject(err)
+// 音乐actions，在这里编写请求
+const musicActions = {
+  musicUrl: {
+    kw: async ({ songmid }, quality) => {
+      // 请求示例
+      return httpFetch('http://xxx', {
+        method: 'GET', // 请求方法
+        headers: {}, // 请求头
+        body: {}, // 请求体
+        from: {}, // 表单数据
+        fromData: {}, // 表单
+      }).then(body => {
+        if (!body.url) throw new Error('Failed to get music url.')
+        return url
       })
+    },
+    // 以下同上
+    kg: async ({ hash }, quality) => {},
+    tx: async ({ songmid }, quality) => {},
+    wy: async ({ songmid }, quality) => {},
+    mg: async ({ songmid }, quality) => {},
+  },
+}
+
+/**
+ * 音乐信息
+ * @name 支持的源对象，可用值： kw/kg/tx/wy/mg
+ * @type 格式，目前固定为 'music'
+ * @actions 操作，目前固定为 ['musicUrl']
+ * @qualitys  当前脚本的该源所支持获取的Url音质，有效的值有：['128k', '320k', 'flac']
+ */
+const musicInfos = {
+  kw: {
+    name: '酷我音乐',
+    type: 'music',
+    actions: ['musicUrl'],
+    qualitys: ['128k', '320k', 'flac', 'flac24bit'],
+  },
+  kg: {
+    name: '酷狗音乐',
+    type: 'music',
+    actions: ['musicUrl'],
+    qualitys: ['128k', '320k', 'flac', 'flac24bit'],
+  },
+  tx: {
+    name: '企鹅音乐',
+    type: 'music',
+    actions: ['musicUrl'],
+    qualitys: ['128k', '320k', 'flac', 'flac24bit'],
+  },
+  wy: {
+    name: '网易音乐',
+    type: 'music',
+    actions: ['musicUrl'],
+    qualitys: ['128k', '320k', 'flac', 'flac24bit'],
+  },
+  mg: {
+    name: '咪咕音乐',
+    type: 'music',
+    actions: ['musicUrl'],
+    qualitys: ['128k', '320k', 'flac', 'flac24bit'],
+  },
+}
+
+/**
+ * 注册应用API请求事件
+ * @source 音乐源，可能的值取决于初始化时传入的sources对象的源key值
+ * @info 请求附加信息，内容根据action变化
+ * @action 请求操作类型，目前只有musicUrl，即获取音乐URL链接，
+ *              当action为musicUrl时info的结构：{type, musicInfo}，
+ *                  info.type：音乐质量，可能的值有128k / 320k / flac（取决于初始化时对应源传入的qualitys值中的一个），
+ *                  info.musicInfo：音乐信息对象，里面有音乐ID、名字等信息
+ */
+on(EVENT_NAMES.request, ({ source, action, info }) => {
+  switch (action) {
+    case 'musicUrl':
+      //  必须返回一个 Promise 对象，返回内容为歌曲URL
+      return musicActions.musicUrl[source](info.musicInfo, info.type)
+        .then(body => Promise.resolve(body))
+        .catch(err => Promise.reject(err))
+    default:
+      return Promise.reject('action not fond.')
   }
 })
 
-// 脚本初始化完成后需要发送inited事件告知应用
-
+/**
+ * 脚本初始化完成后需要发送inited事件告知应用
+ * @status 初始化是否成功
+ * @openDevTools 是否打开开发者工具，方便用于调试脚本
+ */
 send(EVENT_NAMES.inited, {
-  status: true, // 初始化成功 or 失败
-  openDevTools: false, // 是否打开开发者工具，方便用于调试脚本
-  sources: {
-    // 当前脚本支持的源
-    kw: {
-      // 支持的源对象，可用key值：kw/kg/tx/wy/mg
-      name: '酷我音乐',
-      type: 'music', // 目前固定为 music
-      actions: ['musicUrl'], // 目前固定为 ['musicUrl']
-      qualitys: ['128k', '320k', 'flac'], // 当前脚本的该源所支持获取的Url音质，有效的值有：['128k', '320k', 'flac']
-    },
-  },
+  status: true,
+  openDevTools: false,
+  sources: musicInfos,
+})
+
+/**
+ * 发送源更新请求，如果没有用到可以不写
+ * @log 更新日志
+ * @updateUrl 更新URL
+ */
+send(EVENT_NAMES.updateAlert, {
+  log: 'xxx',
+  updateUrl: 'xxx',
 })
 ```
 
@@ -170,7 +239,7 @@ const cancelHttp = window.lx.request(url, options, callback)
 
 应用提供给脚本的工具方法：
 
-:::details `window.lx.utils.buffer`
+:::details window.lx.utils.buffer
 
 - `window.lx.utils.buffer.from`：对应 Node.js 的 `Buffer.from`
 
@@ -180,7 +249,7 @@ const cancelHttp = window.lx.request(url, options, callback)
 
 :::
 
-:::details `window.lx.utils.crypto`
+:::details window.lx.utils.crypto
 
 - `window.lx.utils.crypto.aesEncrypt`：AES 加密 `aesEncrypt(buffer, mode, key, iv)`
 
@@ -194,13 +263,12 @@ const cancelHttp = window.lx.request(url, options, callback)
 
 :::
 
-:::details `window.lx.utils.zlib`
+:::details window.lx.utils.zlib
 
 - `window.lx.utils.zlib.inflate`: zlib 解密
 
 - `window.lx.utils.zlib.deflate`：zlib 加密
 
 :::
-
 
 目前仅提供以上工具方法，如果需要其他方法可以开 issue 讨论。

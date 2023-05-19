@@ -39,7 +39,6 @@ export const Sidebar = sidebar({
   '/mobile/document/': [
     { text: '返回', icon: 'question', link: '/mobile/' },
     { text: '通用', icon: 'common', prefix: 'common/', children: 'structure', collapsible: true },
-    { text: '下载', icon: 'download', prefix: 'download/', children: 'structure', collapsible: true },
     { text: '播放', icon: 'play', prefix: 'play/', children: 'structure', collapsible: true },
     { text: '本地列表', icon: 'local', prefix: 'list/', children: 'structure', collapsible: true },
     { text: '外部歌单', icon: 'songlist', prefix: 'songlist/', children: 'structure', collapsible: true },

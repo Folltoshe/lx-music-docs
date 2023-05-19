@@ -98,7 +98,7 @@ export default defineUserConfig({
   ],
   // 主题配置
   theme: hopeTheme({
-    fullscreen: true,
+    pure: true,
     toc: true,
     navbarAutoHide: 'none',
     navbarLayout: {
@@ -106,11 +106,7 @@ export default defineUserConfig({
       center: [],
       end: ['Links', 'Repo', 'Outlook', 'Search'],
     },
-    themeColor: {
-      green: '#3eaf7c',
-      red: '#f26d6d',
-      orange: '#fb9b5f',
-    },
+    themeColor: true,
 
     hostname: 'https://docs.lxmusic.folltoshe.com',
     author: {
@@ -182,6 +178,7 @@ export default defineUserConfig({
         cacheHTML: true,
         cachePic: true,
         appendBase: true,
+        update: 'hint',
         manifest: {
           name: 'LX Music Docs',
           icons: [
@@ -197,16 +194,6 @@ export default defineUserConfig({
               purpose: 'maskable',
               type: 'image/png',
             },
-            {
-              src: '/icon/512.png',
-              sizes: '512x512',
-              type: 'image/png',
-            },
-            {
-              src: '/icon/192.png',
-              sizes: '192x192',
-              type: 'image/png',
-            },
           ],
         },
 
@@ -215,7 +202,7 @@ export default defineUserConfig({
           statusBarColor: 'black',
         },
         msTile: {
-          image: '/icon/144.png',
+          image: '/icon/152.png',
           color: '#ffffff',
         },
       },
