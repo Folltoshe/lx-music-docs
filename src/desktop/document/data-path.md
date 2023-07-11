@@ -15,4 +15,4 @@ icon: 'storage'
 
 v2 版本的数据库存储在 上方数据目录/lxDatas/lx.data.db
 
-数据库内容说明在 [这里](./v2/db-info.md)
+数据库内容说明在 [这里](./db-info.md)

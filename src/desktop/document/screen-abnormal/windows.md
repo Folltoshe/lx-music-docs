@@ -1,5 +1,5 @@
 ---
-title: win7下界面异常
+title: Windows下界面异常
 ---
 
 ### Windows 7
@@ -50,8 +50,12 @@ Windows 7 系统系统需要安装 Powershell 5.1 及以上版本才可正常获
 
 ### 界面异常
 
-尝试添加运行参数 `--disable-gpu-sandbox` 启动，例如：`.\lx-music-desktop.exe --disable-gpu-sandbox`，添加方法可参阅下文
-。没有遇到问题不要使用此参数！
+尝试 [@RAint0](https://github.com/lyswhut/lx-music-desktop/issues/1079#issuecomment-1488113087) 的解决方案：
+
+> 在Nvidia控制面板中关闭「平滑处理-FXAA」
+
+若以上方式无法解决你的问题，可以尝试添加运行参数 `--disable-gpu-sandbox` 启动，
+例如：`.\lx-music-desktop.exe --disable-gpu-sandbox`，添加方法可参阅下文。没有遇到问题不要使用此参数！
 
 若以上方法无效，则尝试将 `--disable-gpu-sandbox` 逐个换成以下参数启动，直到恢复正常为止：
 

@@ -52,3 +52,8 @@ icon: desktop
   <a href="https://electronjs.org/releases/stable"><img src="https://img.shields.io/github/package-json/dependency-version/lyswhut/lx-music-desktop/dev/electron/master" alt="Electron version"></a>
   <a href="https://github.com/lyswhut/lx-music-desktop/tree/dev"><img src="https://img.shields.io/github/package-json/v/lyswhut/lx-music-desktop/dev" alt="Dev branch version"></a>
 </n-space> -->
+
+
+## 如何使用本文档
+
+![img](https://i3.mjj.rip/2023/07/11/56399bf9c66953eb6c6eead3aa4fa93a.png)
