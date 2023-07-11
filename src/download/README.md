@@ -42,11 +42,25 @@ tag:
       </n-button>
     </a>
   </n-space>
+  <n-space justify="center" size="large" style="padding-top: 30px">
+    <a href="https://github.com/lyswhut/lx-music-desktop/releases/latest">
+      <n-button tertiary round type="primary" size="large">
+        <template #icon>
+          <p class="font-icon icon iconfont icon-download"></p>
+        </template>
+        PC 端 Github 链接
+      </n-button>
+    </a>
+    <a href="https://github.com/lyswhut/lx-music-mobile/releases/latest">
+      <n-button tertiary round type="primary" size="large">
+        <template #icon>
+          <p class="font-icon icon iconfont icon-download"></p>
+        </template>
+        移动 端 Github 链接
+      </n-button>
+    </a>
+  </n-space>
 </ClientOnly>
-
-[PC 端 Github 链接](https://github.com/lyswhut/lx-music-mobile/releases/latest)
-
-[移动 端 Github 链接](https://github.com/lyswhut/lx-music-mobile/releases/latest)
 
 ## 安装包说明
 
