@@ -10,8 +10,8 @@ title: 图片教程
 
 ## 企鹅音乐
 
-![TX](https://shp.qpic.cn/collector/2964359326/a2f2ed4b-5769-4ab4-816d-700ad2ea9462/640?mType=Other)
+![TX](https://i3.mjj.rip/2023/07/11/45acba49b26791374e5ce61e9f8ecd9d.jpeg)
 
 ## 网易音乐
 
-![WY](https://shp.qpic.cn/collector/2964359326/ea4679ff-4cc8-489c-ac5e-209e5516017e/640?mType=Other)
+![WY](https://i3.mjj.rip/2023/07/11/fc1befb8d9b8bfe3238077a883322102.jpeg)

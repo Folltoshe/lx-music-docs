@@ -19,25 +19,48 @@ tag:
 
 若网盘链接无法打开:
 
-- 请尝试将 lanzoui 改为 lanzoux/lanzouj/lanzoue 任意一个查看能否打开
+- 请尝试将域名中的 `lanzoui` 改为 `lanzoux`/`lanzouj`/`lanzoue` 任意一个查看能否打开
 
 - 或者[ [百度](https://ffis.me/baidu/index.html?蓝奏云链接打不开) or [必应](https://kaibinyang.com/bang/?蓝奏云链接打不开) or [Google](https://moedog.org/tools/google/?q=6JOd5aWP5LqR6ZO+5o6l5omT5LiN5byA) ]
 
 ---
 
-推荐使用网盘下载!!!!!如果网盘里面没有你想要的版本可以前往 **Github 发布页**下载!!!!!
+推荐使用网盘下载!!!!!如果网盘里面没有你想要的版本可以前往 **Github 发布页** 下载!!!!!
 
 如果网盘中没有你想要的版本，再使用 Github 下载！！！Github 打不开或者下载速度慢都是正常现象！！
 
 :::
 
-[网盘链接](https://www.lanzoui.com/b0bf2cfa/)
-
-密码：`glqw`
-
-[PC 端 Github 链接](https://github.com/lyswhut/lx-music-desktop/releases)
-
-[移动 端 Github 链接](https://github.com/lyswhut/lx-music-mobile/releases)
+<ClientOnly>
+  <n-space justify="center" size="large" style="padding-top: 30px">
+    <a href="https://www.lanzoui.com/b0bf2cfa/">
+      <n-button tertiary round type="primary" size="large">
+        <template #icon>
+          <p class="font-icon icon iconfont icon-download"></p>
+        </template>
+        网盘下载(密码：glqw)
+      </n-button>
+    </a>
+  </n-space>
+  <n-space justify="center" size="large" style="padding-top: 30px">
+    <a href="https://github.com/lyswhut/lx-music-desktop/releases/latest">
+      <n-button tertiary round type="primary" size="large">
+        <template #icon>
+          <p class="font-icon icon iconfont icon-download"></p>
+        </template>
+        PC 端 Github 链接
+      </n-button>
+    </a>
+    <a href="https://github.com/lyswhut/lx-music-mobile/releases/latest">
+      <n-button tertiary round type="primary" size="large">
+        <template #icon>
+          <p class="font-icon icon iconfont icon-download"></p>
+        </template>
+        移动 端 Github 链接
+      </n-button>
+    </a>
+  </n-space>
+</ClientOnly>
 
 ## 安装包说明
 
@@ -56,7 +79,7 @@ tag:
 
 :::tip
 
-绿色版（免安装版）已经被压缩成 7z 文件（以.7z 结尾），需要用 解压软件 解压后才可以运行，若你的电脑没有解压缩软件
+绿色版（免安装版）已经被压缩成 7z 文件（以.7z 结尾），需要用 **解压软件** 解压后才可以运行，若你的电脑没有解压缩软件
 ，推荐使用这个软件：<https://www.bandisoft.com/bandizip/old/6/>
 
 :::

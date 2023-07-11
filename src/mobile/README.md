@@ -53,3 +53,8 @@ title: 移动端
   <a href="https://github.com/facebook/react-native"><img src="https://img.shields.io/github/package-json/dependency-version/lyswhut/lx-music-mobile/react-native/master" alt="React native version"></a>
   <a href="https://github.com/lyswhut/lx-music-mobile/tree/dev"><img src="https://img.shields.io/github/package-json/v/lyswhut/lx-music-mobile/dev" alt="Dev branch version"></a>
 </n-space> -->
+
+
+## 如何使用本文档
+
+![img](https://i3.mjj.rip/2023/07/11/a7588dc3be3edd7b670bb8393e6fcf8b.png)
