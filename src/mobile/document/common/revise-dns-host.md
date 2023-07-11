@@ -2,7 +2,7 @@
 title: 修改DNS和HOST
 ---
 
-:::waring
+:::warning
 
 安卓系统中修改Hosts需要root权限
 
