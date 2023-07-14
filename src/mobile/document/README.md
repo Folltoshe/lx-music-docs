@@ -18,8 +18,6 @@ title: 常见问题
 
 :::
 
-无法播放 [无法播放](./play/cannot-play.md)
+## 如何使用本文档
 
-无法同步 [无法同步](./sync-backup/sync.md)
-
-导入歌单 [导入歌单](./songlist/open.md)
+![img](https://i3.mjj.rip/2023/07/14/cbc696f62c8fd5ac8af7b289bbd166fa.png)
