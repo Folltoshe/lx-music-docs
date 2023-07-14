@@ -41,7 +41,7 @@ title: 移动端
       Android(安卓版本 >= 6)
     </n-card>
     <n-card home title="特别说明" size="medium" hoverable>
-      不计划支持 IOS(苹果手机系统) 以及 Android 版本为6以下的设备
+      不计划支持 IOS(苹果手机系统) 以及 Android 版本为5以下的设备
     </n-card>
   </n-space>
 </ClientOnly>
@@ -57,4 +57,4 @@ title: 移动端
 
 ## 如何使用本文档
 
-![img](https://i3.mjj.rip/2023/07/11/a7588dc3be3edd7b670bb8393e6fcf8b.png)
+![img](https://i3.mjj.rip/2023/07/14/688e62d3d933ac95b0f450bc09a5f3ac.png)
