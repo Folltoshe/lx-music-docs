@@ -5,7 +5,6 @@ export const Sidebar = sidebar({
     { text: '常见问题', icon: 'question', link: '/desktop/document/' },
     { text: '主页', icon: 'home', link: '/' },
     { text: '仓库', icon: 'github', link: 'https://github.com/lyswhut/lx-music-desktop' },
-    'changLog.md',
     'hotkey.md',
     'scheme-url.md',
     'run-params.md',

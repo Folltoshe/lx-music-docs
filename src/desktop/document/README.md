@@ -16,12 +16,6 @@ title: 常见问题
 
 :::
 
-无法播放 [无法播放](./play/cannot-play.md)
+## 如何使用本文档
 
-无法下载 [无法下载](./download/cannot-download.md)
-
-无法同步 [无法同步](./sync-backup/sync.md)
-
-安装失败 [安装失败](./install/install-failed.md)
-
-导入歌单 [导入歌单](./songlist/open.md)
+![img](https://i3.mjj.rip/2023/07/14/b4f9e9f3a2b7ff3a47694b496a39ed19.png)
