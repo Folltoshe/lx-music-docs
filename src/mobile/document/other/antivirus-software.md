@@ -10,8 +10,8 @@ CI 拉取源代码构建，构建日志：[GitHub Actions](https://github.com/ly
 （[供应链攻击](https://docs.microsoft.com/zh-cn/windows/security/threat-protection/intelligence/supply-chain-malware)）
 ，软件也将会受到牵连，所以我只能尽量选择使用较多人用、信任度较高的依赖。
 
-当然，以上说明建立的前提是在你所用的安装包是从**本项目主页上写的链接**下载的，或者有相关能力者还可以下载源代码自己构建安
-装包。
+当然，以上说明建立的前提是在你所用的安装包是从**本项目主页上写的链接**下载的，
+或者有相关能力者还可以下载源代码自己构建安装包。
 
 我们并不保证第三方下载站的安装包不包含恶意行为。
 
