@@ -4,7 +4,7 @@ title: 修改DNS和HOST
 
 :::info
 
-改完 DNS 或 HOST 后可能需要重启软件或电脑才会生效
+改完 DNS 或 HOST 后可能需要 **重启软件或电脑** 才会生效
 
 :::
 
@@ -24,7 +24,7 @@ title: 修改DNS和HOST
 
 6. 首选服务器填写`8.8.8.8`备用服务器填写`223.6.6.6 `。
 
-7. <kbd>windows</kbd>+<kbd>r</kbd>输入 cmd 回车运行。
+7. <kbd>windows</kbd>+<kbd>r</kbd>输入 `cmd` 回车运行。
 
 8. 输入`ipconfig /flushdns`回车运行。
 
@@ -60,6 +60,16 @@ echo done
    `97.64.37.235 tm.tempmusics.tk`
 
 4. 保存
+
+:::info
+
+若无法保存则按照以下方法解决
+
+1. 将此文件另存到另外一个目录（不要改变文件名称，保持`hosts`）
+
+2. 将另存的文件复制（或剪切）到`C:\WINDOWS\system32\drivers\etc`目录下
+
+:::
 
 ## MacOS
 
