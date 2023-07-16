@@ -35,7 +35,7 @@ author: lerdertre
 
 1. 检查其他音乐软件是否能正常生效
 2. 检查在LSPosed中是否勾选 LX Music
-3. 检查 LX　Music中是否勾选`显示桌面歌词`选项和`墨·状态栏歌词`选项
+3. 检查 LX Music中是否勾选`显示桌面歌词`选项和`墨·状态栏歌词`选项
 4. 重启System UI和LX Music
 
 ::::
