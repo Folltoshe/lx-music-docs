@@ -1,15 +1,19 @@
-## 使用 VuePress 开发的 LX-MUSIC-DOCS
+## 使用源码
 
-## 源码的使用方法
+### 安装依赖
 
-### 运行
-
+```shell
+$ npm install
 ```
-npm run serve
+
+### 开发模式
+
+```shell
+$ npm run dev
 ```
 
 ### 编译
 
-```
-npm run build
+```shell
+$ npm run build
 ```

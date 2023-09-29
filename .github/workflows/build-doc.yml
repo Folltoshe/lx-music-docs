@@ -1,0 +1,38 @@
+name: Build Doc
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: npm
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build Doc
+        env:
+          NODE_OPTIONS: --max_old_space_size=8192
+        run: |
+          npm run build
+          > src/.vuepress/dist/.nojekyll
+
+      - name: Deploy Doc
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          force: true
+          branch: dist
+          folder: src/.vuepress/dist

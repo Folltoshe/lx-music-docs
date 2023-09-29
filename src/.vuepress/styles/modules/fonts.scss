@@ -1,0 +1,28 @@
+// 旧版cdn https://cdn.jsdelivr.ren
+
+// 汉仪文黑 85W
+// @font-face {
+//   font-family: 'HanYi WenHei 85W';
+//   font-display: auto;
+//   font-style: normal;
+//   src: url(https://cdn.jsdelivr.net/npm/folltoshe_file/fonts/HanYi/WenHei_85W/compress/index.woff) format(woff),
+//     url(https://cdn.jsdelivr.net/npm/folltoshe_file/fonts/HanYi/WenHei_85W/compress/index.woff2) format(woff2);
+// }
+
+// 汉仪旗黑 865J
+@font-face {
+  font-family: 'HanYi QiHei 65J';
+  font-display: auto;
+  font-style: normal;
+  src: url(https://cdn.jsdelivr.net/npm/folltoshe_file@1.0.6/fonts/HanYi/QiHei_65J/compress/index.woff2) format(woff2),
+    url(https://cdn.jsdelivr.net/npm/folltoshe_file@1.0.6/fonts/HanYi/QiHei_65J/compress/index.woff) format(woff);
+}
+
+// JetBrainsMono Light
+@font-face {
+  font-family: 'JetBrainsMono Light';
+  font-display: auto;
+  font-style: light;
+  src: url(https://cdn.jsdelivr.net/npm/folltoshe_file@1.0.6/fonts/JetBrainsMono/light/compress/index.woff2) format(woff2),
+    url(https://cdn.jsdelivr.net/npm/folltoshe_file@1.0.6/fonts/JetBrainsMono/light/compress/index.woff) format(woff);
+}

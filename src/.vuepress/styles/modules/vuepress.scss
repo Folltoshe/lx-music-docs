@@ -1,0 +1,74 @@
+hr {
+  border-color: var(--theme-color-mask);
+}
+h2 {
+  border-color: var(--theme-color-mask);
+}
+h3 {
+  border-color: var(--theme-color-mask);
+}
+h4 {
+  border-color: var(--theme-color-mask);
+}
+
+// 主页文字
+.home.project .hero h1,
+.home.project .hero .description,
+.home.project .hero .action {
+  margin: 30px;
+}
+
+// 提醒
+strong {
+  color: var(--black);
+}
+
+// 主页按钮
+.home.project .hero .action-button {
+  border-radius: 40px;
+}
+
+.home.project .hero h1,
+.home.project .hero .description,
+.home.project .hero .action {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.hero-info {
+  text-align: center;
+}
+
+.nav-links {
+  margin-left: 20px !important;
+}
+
+.footer-wrapper {
+  position: relative !important;
+  left: var(--sidebar-width) !important;
+  width: calc(100% - var(--sidebar-width)) !important;
+  -webkit-padding-start: 0 !important;
+  padding-inline-start: 0 !important;
+  -webkit-padding-end: 0 !important;
+  padding-inline-end: 0 !important;
+}
+
+.sidebar {
+  -webkit-padding-start: 0 !important;
+  padding-inline-start: 0 !important;
+}
+
+.theme-container.sidebar-collapsed,
+.no-sidebar .footer-wrapper {
+  left: 0 !important;
+  width: 100% !important;
+}
+
+@media (max-width: 719px) {
+  .footer-wrapper {
+    left: 0 !important;
+    width: 100% !important;
+  }
+}

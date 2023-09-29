@@ -1,0 +1,23 @@
+.n-card[home] {
+  --n-color: var(--bg-color-secondary) !important;
+  --n-text-color: var(--text-color) !important;
+  --n-title-text-color: var(--text-color) !important;
+  --n-border-color: rgba(0, 0, 0, 0) !important;
+  --n-box-shadow: 0 2px 12px 0 var(--card-shadow) !important;
+  transition: background var(--color-transition), box-shadow var(--color-transition),
+    transform var(--transform-transition);
+  background-color: #00000000;
+  border-radius: 0.5rem;
+}
+.n-card[home]:hover {
+  background-color: var(--bg-color-secondary);
+  box-shadow: 0 2px 12px 0 var(--card-shadow);
+  transform: scale(1.05);
+}
+
+.n-button {
+  --n-color: var(--theme-color-mask) !important;
+  --n-color-hover: var(--theme-color-light) !important;
+  --n-text-color: var(--text-color) !important;
+  --n-text-color-hover: var(--text-color-light) !important;
+}
