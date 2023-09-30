@@ -7,13 +7,13 @@ tag:
   - 软件下载
 ---
 
-<!-- <n-message-provider>
+<n-message-provider>
   <downloadList />
-</n-message-provider> -->
+</n-message-provider>
 
-<!-- <script setup>
+<script setup>
   import downloadList from '@views/download/list.vue'
-</script> -->
+</script>
 
 :::danger
 
@@ -91,7 +91,7 @@ tag:
 
 从v2.5.0起，LX的默认 Windows 版已不再提供32位的支持
 
-若你不懂选择哪个版本，建议优先使用安装版！
+若你不懂选择哪个版本，建议优先使用安装版！(文件名以`x64-Setup.exe`结尾)
 
 :::tip
 
