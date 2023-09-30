@@ -4,8 +4,7 @@ icon: 'url'
 author: 落雪無痕
 ---
 
-从v1.17.0起支持 Scheme URL，可以使用此功能从浏览器等场景下调用LX Music，我们开发了一个
-[油猴脚本](https://github.com/lyswhut/lx-music-script#readme)配套使用
+从v1.17.0起支持 Scheme URL，可以使用此功能从浏览器等场景下调用LX Music，我们开发了一个[油猴脚本](https://github.com/lyswhut/lx-music-script#readme)配套使用
 
 脚本安装地址：<https://greasyfork.org/zh-CN/scripts/438148>
 
@@ -17,15 +16,13 @@ author: 落雪無痕
 
 目前支持两种传参方式：
 
-- 通过`data`传参，以经过URL编码的JSON数据传参，例：`lxmusic://music/play?data=xxxx`，
-  其中`xxxx`为经过URL编码后的JSON数据，支持复杂的参数调用
+- 通过`data`传参，以经过URL编码的JSON数据传参，例：`lxmusic://music/play?data=xxxx`，其中`xxxx`为经过URL编码后的JSON数据，支持复杂的参数调用
 - 通过`URL`传参，适用于简单传参的调用，不需要转成JSON格式，例：
   `lxmusic://music/search/xxxx`，但仍然需要对数据进行URL编码，只适应于简单参数调用（v1.18.0新增）
 
 ### `data`方式传参
 
-以经过URL编码的JSON数据传参，例：`lxmusic://music/play?data=xxxx`，
-其中`xxxx`为经过URL编码后的JSON数据，JSON数据内容取决于下表的参数部分
+以经过URL编码的JSON数据传参，例：`lxmusic://music/play?data=xxxx`，其中`xxxx`为经过URL编码后的JSON数据，JSON数据内容取决于下表的参数部分
 
 | 描述 | URL | 参数
 | --- | --- | ---
@@ -60,8 +57,7 @@ author: 落雪無痕
 
 #### 以URL传参的例子
 
-用`lxmusic://`拼接上表中填充参数后的URL即可，填充参数时最好将参数单独转一下URL编码，
-否则若参数中存在特殊字符（如`/`）将导致异常的调用
+用`lxmusic://`拼接上表中填充参数后的URL即可，填充参数时最好将参数单独转一下URL编码，否则若参数中存在特殊字符（如`/`）将导致异常的调用
 
 - 打开歌单：`lxmusic://songlist/open/kw/3373919903`
 - 搜索歌曲：`lxmusic://music/search/%E7%AA%81%E7%84%B6%E7%9A%84%E8%87%AA%E6%88%91`

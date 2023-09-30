@@ -7,6 +7,8 @@ title: 添加本地音乐
 2. 右击任意列表名称
 3. 选择**添加本地歌曲**
 
+![local-music](https://i.mji.rip/2023/09/30/b7ee86b8b227a23641b2b8bd36aec059.jpeg)
+
 :::tip
 
 若导入的歌曲名字出现乱码，则表明目标歌曲文件内的标签文字编码不是UTF-8，建议使用[mp3Tag](https://www.mp3tag.de/en/download.html)重新编辑歌曲文件的标签内容

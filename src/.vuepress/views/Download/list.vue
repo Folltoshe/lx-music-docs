@@ -3,15 +3,7 @@
     <!--  -->
     <n-card  content-style="padding: 0;">
       <n-tabs type="line" size="large" :tabs-padding="10" pane-style="padding: 10px;width: auto;" animated>
-        <n-tab-pane v-for="data of desktopList.packages" :tab="data.display" :name="data.display">
-          <n-data-table :columns="columns" :data="data.assets" :pagination="false" :single-line="false" single-column />
-        </n-tab-pane>
-      </n-tabs>
-    </n-card>
-    <!--  -->
-    <n-card  content-style="padding: 0;">
-      <n-tabs type="line" size="large" :tabs-padding="10" pane-style="padding: 10px;width: auto;" animated>
-        <n-tab-pane v-for="data of mobileList.packages" :tab="data.display" :name="data.display">
+        <n-tab-pane v-for="data of allDownloadList.packages" :tab="data.display" :name="data.display">
           <n-data-table :columns="columns" :data="data.assets" :pagination="false" :single-line="false" single-column />
         </n-tab-pane>
       </n-tabs>
@@ -88,11 +80,11 @@ axios({
   }
   // console.log(linuxList);
 
-  desktopList['packages']['windows']['assets'] = winList;
-  desktopList['packages']['macos']['assets'] = macList;
-  desktopList['packages']['linux']['assets'] = linuxList;
-  desktopList['updateInfo'] = response["body"];
-  desktopList['version'] = response["name"];
+  allDownloadList['packages']['windows']['assets'] = winList;
+  allDownloadList['packages']['macos']['assets'] = macList;
+  allDownloadList['packages']['linux']['assets'] = linuxList;
+  allDownloadList['updateInfo'] = response["body"];
+  allDownloadList['version'] = response["name"];
 })
 .catch(function (error) {
   console.log(error);
@@ -114,9 +106,9 @@ axios({
   }
   // console.log(androidList);
 
-  mobileList['packages']['android']['assets'] = androidList;
-  mobileList['updateInfo'] = response["body"];
-  mobileList['version'] = response["name"];
+  allDownloadList['packages']['android']['assets'] = androidList;
+  allDownloadList['updateInfo'] = response["body"];
+  allDownloadList['version'] = response["name"];
 })
 .catch(function (error) {
   console.log(error);
@@ -149,20 +141,13 @@ const columns = [
   },
 ]
 
-let desktopList = reactive({
+let allDownloadList = reactive({
   version: '',
   updateInfo: '',
   packages: {
     windows: { display: 'Windows', assets: [] },
     macos: { display: 'Mac OS', assets: [] },
     linux: { display: 'Linux', assets: [] },
-  },
-})
-
-let mobileList = reactive({
-  version: '',
-  updateInfo: '',
-  packages: {
     android: { display: 'Android', assets: [] },
   },
 })

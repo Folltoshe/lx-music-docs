@@ -2,9 +2,10 @@
 title: 显示异常
 ---
 
-## Windows 7 系统桌面歌词显示异常
+## Windows 系统桌面歌词显示异常
 
 Windows 7 未开启 Aero 效果时桌面歌词会有问题，详情看[Windows 7 下界面异常](../screen-abnormal/windows.html#windows-7)
+Windows 10 或 Windows 11 出现此问题请查看[Windows 10 & 11 下界面异常](../screen-abnormal/windows.html#windows-10-11)
 
 ## MAC OS 系统、桌面歌词有残留阴影
 
