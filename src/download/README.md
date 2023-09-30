@@ -12,7 +12,7 @@ tag:
 </n-message-provider>
 
 <script setup>
-  import downloadList from '@views/download/list.vue'
+  import downloadList from '@views/Download/list.vue'
 </script>
 
 :::danger
