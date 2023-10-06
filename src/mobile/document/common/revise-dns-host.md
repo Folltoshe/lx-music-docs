@@ -25,6 +25,10 @@ title: 修改DNS和HOST
 
 4. 保存
 
+## 图片教程
+
+![](https://i.mji.rip/2023/10/06/d74b83c927197d180301ac0160df5866.jpeg)
+
 ## 修改Hosts
 
   0. ~~既然你都root了还不会修改Hosts有点丢人耶~~

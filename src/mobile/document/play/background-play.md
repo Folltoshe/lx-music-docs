@@ -18,3 +18,11 @@ author: RainFoll
 部分手机在开启游戏模式下会`强制关闭`后台应用（即使在允许后台播放）。
 
 :::
+
+:::details 图片教程
+
+![](https://i.mji.rip/2023/10/06/a2ab86214b976751427b0caa4c6affab.jpeg)
+![](https://i.mji.rip/2023/10/06/a72288abf3514660ac884f32e8faec83.jpeg)
+![](https://i.mji.rip/2023/10/06/d83e91a0a5abb5609b5a050cf2f07a7b.jpeg)
+
+:::

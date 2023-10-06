@@ -19,100 +19,77 @@ import _ from 'lodash'
 import { NButton, useMessage } from 'naive-ui'
 
 let sizeFixer = function(size){
-  if (!size){
-    return "";
-  }
+  if (!size) return ""
 
-  var num = 1024.00;
+  const num = 1024.00
 
-  if (size < num){
-    return size + "B";
-  }
-  if (size < Math.pow(num, 2)){
-    return (size / num).toFixed(2) + "KB";
-  }
-  if (size < Math.pow(num, 3)){
-    return (size / Math.pow(num, 2)).toFixed(2) + "MB";
-  }
-  if (size < Math.pow(num, 4)){
-    return (size / Math.pow(num, 3)).toFixed(2) + "GB";
-  }
-  return (size / Math.pow(num, 4)).toFixed(2) + "TB";
+  if (size < num) return size + "B"
+  if (size < Math.pow(num, 2)) return (size / num).toFixed(2) + "KB"
+  if (size < Math.pow(num, 3)) return (size / Math.pow(num, 2)).toFixed(2) + "MB"
+  if (size < Math.pow(num, 4)) return (size / Math.pow(num, 3)).toFixed(2) + "GB"
+  
+  return (size / Math.pow(num, 4)).toFixed(2) + "TB"
 }
-
-let i;
 
 axios({
   method: 'get',
   url: 'https://api.github.com/repos/lyswhut/lx-music-desktop/releases/latest'
 })
-.then(function (resp) {
-  var response = JSON.parse(JSON.stringify(resp.data));
+.then(function (response) {
+  const winList = response.data.assets.filter(asset => {
+    return !asset.name.includes('blockmap') && /(\.exe|.*win.*)$/.test(asset.name)
+  })
+  .map(asset => {
+    asset.size = sizeFixer(asset.size)
+    return asset
+  })
 
-  let winList = [];
-  for (i of response['assets']){
-    if (i['name'].search('blockmap') == -1){
-      if (i['name'].search('exe') != -1 || i['name'].search('win') != -1){
-        i['size'] = sizeFixer(i['size']);
-        winList.push(i);
-      }
-    }
-  }
-  // console.log(winList);
-  
-  let macList = [];
-  for (i of response['assets']){
-    if (i['name'].search('blockmap') == -1 && i['name'].search('dmg') != -1){
-      i['size'] = sizeFixer(i['size']);
-      macList.push(i);
-    }
-  }
-  // console.log(macList);
+  const macList = response.data.assets.filter(asset => {
+    return !asset.name.includes('blockmap') && /\.(dmg)$/.test(asset.name)
+  })
+  .map(asset => {
+    asset.size = sizeFixer(asset.size)
+    return asset
+  })
 
-  let linuxList = [];
-  for (i of response['assets']){
-    if (i['name'].search('blockmap') == -1){
-      if (i['name'].search('rpm') != -1 || i['name'].search('deb') != -1 || i['name'].search('pacman') != -1 || i['name'].search('AppImage') != -1){
-        i['size'] = sizeFixer(i['size']);
-        linuxList.push(i);
-      }
-    }
-  }
-  // console.log(linuxList);
+  const linuxList = response.data.assets.filter(asset => {
+    return !asset.name.includes('blockmap') && /\.(rpm|deb|pacman|AppImage)$/.test(asset.name)
+  })
+  .map(asset => {
+    asset.size = sizeFixer(asset.size)
+    return asset
+  })
 
-  allDownloadList['packages']['windows']['assets'] = winList;
-  allDownloadList['packages']['macos']['assets'] = macList;
-  allDownloadList['packages']['linux']['assets'] = linuxList;
-  allDownloadList['updateInfo'] = response["body"];
-  allDownloadList['version'] = response["name"];
+  allDownloadList.packages.windows.assets = winList
+  allDownloadList.packages.macos.assets = macList
+  allDownloadList.packages.linux.assets = linuxList
+  // allDownloadList.updateInfo = response.data.body
+  // allDownloadList.version = response.data.name
 })
 .catch(function (error) {
-  console.log(error);
-});
+  console.log(error)
+})
 
 axios({
   method: 'get',
   url: 'https://api.github.com/repos/lyswhut/lx-music-mobile/releases/latest'
 })
-.then(function (resp) {
-  var response = JSON.parse(JSON.stringify(resp.data));
+.then(function (response) {
+  const androidList = response.data.assets.filter(asset => {
+    return !asset.name.includes('blockmap') && /\.(apk)$/.test(asset.name)
+  })
+  .map(asset => {
+    asset.size = sizeFixer(asset.size)
+    return asset
+  })
 
-  let androidList = [];
-  for (i of response['assets']){
-    if (i['name'].search('blockmap') == -1 && i['name'].search('apk') != -1){
-      i['size'] = sizeFixer(i['size']);
-      androidList.push(i);
-    }
-  }
-  // console.log(androidList);
-
-  allDownloadList['packages']['android']['assets'] = androidList;
-  allDownloadList['updateInfo'] = response["body"];
-  allDownloadList['version'] = response["name"];
+  allDownloadList.packages.android.assets = androidList
+  // allDownloadList.updateInfo = response.data.body
+  // allDownloadList.version = response.data.name
 })
 .catch(function (error) {
-  console.log(error);
-});
+  console.log(error)
+})
 
 
 
@@ -132,7 +109,7 @@ const columns = [
           tertiary: true,
           size: 'large',
           onClick: () => useDownload(
-            "https://ghproxy.com/" + row['browser_download_url']
+            "https://ghproxy.com/" + row.browser_download_url
           ),
         },
         h('span', { class: 'font-icon icon iconfont icon-download' })

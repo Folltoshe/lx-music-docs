@@ -15,6 +15,9 @@ tag:
   import downloadList from '@views/Download/list.vue'
 </script>
 
+**若你不懂选择哪个版本，电脑建议优先使用安装版(文件名以`x64-Setup.exe`结尾)，手机优先使用arm64版(文件名以`arm64-v8a.apk`结尾)更多请看[说明](#安装包说明)**
+
+
 :::danger
 
 若网盘链接无法打开:

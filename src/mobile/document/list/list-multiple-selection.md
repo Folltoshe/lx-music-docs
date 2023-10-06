@@ -15,3 +15,14 @@ title: 列表多选
 选完后可用歌曲列表三个点的菜单操作已选的内容
 
 :::
+
+:::details 点击展开图片
+
+![](https://i.mji.rip/2023/10/06/c911d5f769ee1b937adace54fec4f6fe.jpeg)
+![](https://i.mji.rip/2023/10/06/65f827228737694408e8b5781403cbcf.jpeg)
+![](https://i.mji.rip/2023/10/06/9266bb9bd9c77a4ac14620ef4f67f6e7.gif)
+![](https://i.mji.rip/2023/10/06/cdc9757a08f15b306b0ebfbe0719715c.gif)
+![](https://i.mji.rip/2023/10/06/aee42f7f270b8957184ea02366d809c8.gif)
+![](https://i.mji.rip/2023/10/06/96aa76f5371d61c5b0fdf463a7bd1723.gif)
+
+:::
