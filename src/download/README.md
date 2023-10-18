@@ -7,9 +7,9 @@ tag:
   - 软件下载
 ---
 
-<n-message-provider>
+<!-- <n-message-provider>
   <downloadList />
-</n-message-provider>
+</n-message-provider> -->
 
 <script setup>
   import downloadList from '@views/Download/list.vue'
@@ -34,7 +34,7 @@ tag:
 
 :::
 
-<ClientOnly>
+<!-- <ClientOnly>
   <n-space justify="center" size="large" style="padding-top: 30px">
     <a href="https://pan.lxmusic.top/b0bf2cfa?pwd=glqw">
       <n-button tertiary round type="primary" size="large">
@@ -71,7 +71,7 @@ tag:
       </n-button>
     </a>
   </n-space>
-</ClientOnly>
+</ClientOnly> -->
 
 
 ## 安装包说明

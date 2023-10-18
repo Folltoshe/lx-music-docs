@@ -14,8 +14,8 @@ actions:
     link: /mobile/
     type: primary
 
-  - text: 软件下载
-    link: /download/
+  # - text: 软件下载
+  #   link: /download/
 
 features:
   - title: 开源
@@ -35,13 +35,22 @@ features:
     details: 本项目不计划支持IOS。当前版本比128k更高的音质已失效！
 ---
 
+::::warning
+
+由于收到腾讯投诉要求停止提供软件内置的连接到他们平台的在线播放及下载服务，所以从**即日起**LX本身不再提供上述服务。
+
+::: right
+2023年10月18日
+:::
+
+::::
+
+
 :::danger
 
 请不要在公共场合宣传 LX Music！
 
 ---
-
-提问前请先查看 [如何提问](#如何提问)
 
 反馈请查看 [如何反馈](#如何反馈)
 
