@@ -1,0 +1,1 @@
+import{_ as o}from"./plugin-vue_export-helper-c27b6911.js";import{o as e,c as t,a as n}from"./app-a5b66084.js";const c={},a=n("p",null,"移动端不支持歌曲下载。",-1),_=[a];function s(r,l){return e(),t("div",null,_)}const i=o(c,[["render",s],["__file","cannot-download.html.vue"]]);export{i as default};
